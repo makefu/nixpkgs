@@ -147,7 +147,7 @@
   ludo = "Ludovic Courtès <ludo@gnu.org>";
   madjar = "Georges Dubus <georges.dubus@compiletoi.net>";
   magnetophon = "Bart Brouns <bart@magnetophon.nl>";
-  makefu = "Felix Richter <makefu-nix@syntax-fehler.de>";
+  makefu = "Felix Richter <makefu@syntax-fehler.de>";
   malyn = "Michael Alyn Miller <malyn@strangeGizmo.com>";
   manveru = "Michael Fellinger <m.fellinger@gmail.com>";
   marcweber = "Marc Weber <marco-oweber@gmx.de>";
