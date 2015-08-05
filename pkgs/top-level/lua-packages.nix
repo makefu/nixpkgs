@@ -419,7 +419,7 @@ let
     installPhase = ''
       mkdir -p $out/lib/lua/${lua.luaversion}/
       cp -r . $out/lib/lua/${lua.luaversion}/vicious/
-      echo "return require((...) .. '.init')" > $out/lib/lua/${lua.luaversion}/vicious.lua
+      printf "package.path = '$out/lib/lua/${lua.luaversion}/?/init.lua;' ..  package.path\nreturn require((...) .. '.init')\n" > $out/lib/lua/${lua.luaversion}/vicious.lua
     '';
   };
 
