@@ -48,7 +48,7 @@ in
           ''
             ${concatMapStrings (pkg: ''
               export LUA_CPATH=$LUA_CPATH''${LUA_CPATH:+;}${pkg}/lib/lua/${awesome.lua.luaversion}/?.so
-              export LUA_PATH=$LUA_PATH''${LUA_PATH:+;}${pkg}/lib/lua/${awesome.lua.luaversion}/?.lua;${pkg}/lib/lua/${awesome.lua.luaversion}/?/init.lua
+              export LUA_PATH=$LUA_PATH''${LUA_PATH:+;}${pkg}/lib/lua/${awesome.lua.luaversion}/?.lua
             '') cfg.luaModules}
 
             ${awesome}/bin/awesome &
