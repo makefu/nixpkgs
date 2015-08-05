@@ -404,7 +404,7 @@ let
 
     src = fetchzip {
       url    = "http://git.sysphere.org/vicious/snapshot/vicious-${version}.tar.xz";
-      sha256 = "11x3n93wrljg66s5jfrm0861qxidlc0rd47hn02x5wl9mwjbizwp";
+      sha256 = "1c901siza5vpcbkgx99g1vkqiki5qgkzx2brnj4wrpbsbfzq0bcq";
     };
 
     meta = with stdenv.lib; {
