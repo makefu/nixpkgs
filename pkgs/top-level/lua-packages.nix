@@ -400,4 +400,29 @@ let
     '';
   };
 
+  vicious = stdenv.mkDerivation rec {
+    name = "vicious-${version}";
+    version = "2.1.3";
+
+    src = fetchzip {
+      url    = "http://git.sysphere.org/vicious/snapshot/vicious-${version}.tar.xz";
+      sha256 = "11x3n93wrljg66s5jfrm0861qxidlc0rd47hn02x5wl9mwjbizwp";
+    };
+
+    meta = with stdenv.lib; {
+      description = "vicious widgets for window managers";
+      homepage    = http://git.sysphere.org/vicious/;
+      license     = licenses.gpl;
+      maintainers = with maintainers; [ makefu ];
+      platforms   = platforms.linux;
+    };
+
+    buildInputs = [ lua ];
+    installPhase = ''
+      mkdir -p $out/lib/lua/${lua.luaversion}/
+      cp -r . $out/lib/lua/${lua.luaversion}/vicious/
+      echo "return require((...) .. '.init')" > $out/lib/lua/${lua.luaversion}/vicious.lua
+    '';
+  };
+
 }; in self
