@@ -16761,12 +16761,12 @@ let
 
   d2to1 = buildPythonPackage rec {
     name = "d2to1-${version}";
-    version = "0.2.12";
+    version = "0.2.11";
 
     buildInputs = with self; [ nose ];
     src = pkgs.fetchurl {
       url = "https://pypi.python.org/packages/source/d/d2to1/d2to1-${version}.tar.gz";
-      sha256 = "1ls3mwl05sjb4gvbzgnx8j4w6pzx321ai4shydddgncfxcdl6p6p";
+      sha256 = "1a5z367b7dpd6dgi0w8pymb68aj2pblk8w04l2c8hibhj8dpl2b4";
     };
 
     meta = {
@@ -16780,9 +16780,8 @@ let
   ovh = buildPythonPackage rec {
     name = "ovh-${version}";
     version = "0.3.5";
-
-    propagatedBuildInputs = with self; [  d2to1 nose ];
-    doCheck = false;
+    doCheck = false; #test needs packages too explicit
+    buildInputs = with self; [ d2to1 requests2 ];
 
     src = pkgs.fetchurl {
       url = "https://pypi.python.org/packages/source/o/ovh/ovh-${version}.tar.gz";
