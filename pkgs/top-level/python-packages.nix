@@ -17195,4 +17195,42 @@ let
     };
   };
 
+  d2to1 = buildPythonPackage rec {
+    name = "d2to1-${version}";
+    version = "0.2.12";
+
+    buildInputs = with self; [ nose ];
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/d/d2to1/d2to1-${version}.tar.gz";
+      sha256 = "1ls3mwl05sjb4gvbzgnx8j4w6pzx321ai4shydddgncfxcdl6p6p";
+    };
+
+    meta = {
+      description = "Allows using distutils2-like setup.cfg files for a package's metadata with a distribute/setuptools setup.py";
+      homepage = https://pypi.python.org/pypi/d2to1;
+      license = licenses.bsd2;
+      maintainers = [ maintainers.makefu ];
+    };
+  };
+
+  ovh = buildPythonPackage rec {
+    name = "ovh-${version}";
+    version = "0.3.5";
+
+    propagatedBuildInputs = with self; [  d2to1 nose ];
+    doCheck = false;
+
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/o/ovh/ovh-${version}.tar.gz";
+      sha256 = "1y74lrdlgbb786mwas7ynphimfi00dgr67ncjq20kdf31jg5415n";
+    };
+
+    meta = {
+      description = "Thin wrapper around OVH's APIs. Handles all the hard work including credential creation and requests signing.";
+      homepage = https://pypi.python.org/pypi/ovh;
+      license = licenses.bsd2;
+      maintainers = [ maintainers.makefu ];
+    };
+  };
+
 }; in pythonPackages
