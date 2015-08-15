@@ -599,6 +599,7 @@ let
 
   arp-scan = callPackage ../tools/misc/arp-scan { };
 
+
   artyFX = callPackage ../applications/audio/artyFX {
     inherit (xlibs) libpthreadstubs;
   };
@@ -9103,6 +9104,8 @@ let
     pam = if stdenv.isLinux then pam else null;
     libmemcached = null; # Detection is broken upstream
   };
+
+  posix-array = callPackage ../development/libraries/array { };
 
   postgresql = postgresql92;
 
