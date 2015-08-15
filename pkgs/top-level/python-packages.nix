@@ -17217,7 +17217,8 @@ let
     name = "ovh-${version}";
     version = "0.3.5";
     doCheck = false; #test needs packages too explicit
-    buildInputs = with self; [ d2to1 requests2 ];
+    buildInputs = with self; [ d2to1 ];
+    propagatedBuildInputs = with self; [ requests2 ];
 
     src = pkgs.fetchurl {
       url = "https://pypi.python.org/packages/source/o/ovh/ovh-${version}.tar.gz";
