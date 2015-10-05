@@ -17381,4 +17381,160 @@ let
     };
   };
 
+<<<<<<< HEAD
+=======
+  willow = buildPythonPackage rec {
+    name = "willow-${version}";
+    version = "0.2.1";
+    disabled = pythonOlder "2.7";
+
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/W/Willow/Willow-${version}.tar.gz";
+      sha256 = "0mgdpq7cvyvgk0n8ibkym3nsw1xg89kbismsj2y186ldcyxfajwa";
+    };
+
+    propagatedBuildInputs = with self; [ six ];
+
+    meta = {
+      description = "A Python image library that sits on top of Pillow, Wand and OpenCV";
+      homepage = https://github.com/torchbox/Willow/;
+      license = licenses.bsd2;
+      maintainers = with maintainers; [ desiderius ];
+    };
+  };
+
+  importmagic = buildPythonPackage rec {
+    simpleName = "importmagic";
+    name = "${simpleName}-${version}";
+    version = "0.1.3";
+    doCheck = false;  # missing json file from tarball
+
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/i/${simpleName}/${name}.tar.gz";
+      sha256 = "194bl8l8sc2ibwi6g5kz6xydkbngdqpaj6r2gcsaw1fc73iswwrj";
+    };
+
+    propagatedBuildInputs = with self; [ six ];
+
+    meta = {
+      description = "Python Import Magic - automagically add, remove and manage imports";
+      homepage = http://github.com/alecthomas/importmagic;
+      license = "bsd";
+    };
+  };
+
+  xstatic = buildPythonPackage rec {
+    name = "XStatic-${version}";
+    version = "1.0.1";
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/X/XStatic/XStatic-${version}.tar.gz";
+      sha256 = "09npcsyf1ccygjs0qc8kdsv4qqy8gm1m6iv63g9y1fgbcry3vj8f";
+    };
+    meta = {
+      homepage = http://bitbucket.org/thomaswaldmann/xstatic;
+      description = "base packaged static files for python";
+      license = licenses.mit;
+      maintainers = [ maintainers.makefu ];
+    };
+  };
+
+  xstatic-bootbox = buildPythonPackage rec {
+    name = "XStatic-Bootbox-${version}";
+    version = "4.3.0.1";
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/X/XStatic-Bootbox/XStatic-Bootbox-${version}.tar.gz";
+      sha256 = "0wks1lsqngn3gvlhzrvaan1zj8w4wr58xi0pfqhrzckbghvvr0gj";
+    };
+
+    meta = {
+      homepage =  http://bootboxjs.com;
+      description = "bootboxjs packaged static files for python";
+      license = licenses.mit;
+      maintainers = [ maintainers.makefu ];
+    };
+  };
+
+  xstatic-bootstrap = buildPythonPackage rec {
+    name = "XStatic-Bootstrap-${version}";
+    version = "3.3.5.1";
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/X/XStatic-Bootstrap/XStatic-Bootstrap-${version}.tar.gz";
+      sha256 = "0jzjq3d4vp2shd2n20f9y53jnnk1cvphkj1v0awgrf18qsy2bmin";
+    };
+
+    meta = {
+      homepage =  http://getbootstrap.com;
+      description = "bootstrap packaged static files for python";
+      license = licenses.mit;
+      maintainers = [ maintainers.makefu ];
+    };
+  };
+
+  xstatic-jquery = buildPythonPackage rec {
+    name = "XStatic-jQuery-${version}";
+    version = "1.10.2.1";
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/X/XStatic-jQuery/XStatic-jQuery-${version}.tar.gz";
+      sha256 = "018kx4zijflcq8081xx6kmiqf748bsjdq7adij2k91bfp1mnlhc3";
+    };
+
+    meta = {
+      homepage =  http://jquery.org;
+      description = "jquery packaged static files for python";
+      license = licenses.mit;
+      maintainers = [ maintainers.makefu ];
+    };
+  };
+
+  xstatic-jquery-file-upload = buildPythonPackage rec {
+    name = "XStatic-jQuery-File-Upload-${version}";
+    version = "9.7.0.1";
+    propagatedBuildInputs = with self;[ xstatic-jquery ];
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/X/XStatic-jQuery-File-Upload/XStatic-jQuery-File-Upload-${version}.tar.gz";
+      sha256 = "0d5za18lhzhb54baxq8z73wazq801n3qfj5vgcz7ri3ngx7nb0cg";
+    };
+
+    meta = {
+      homepage =  http://plugins.jquery.com/project/jQuery-File-Upload;
+      description = "jquery-file-upload packaged static files for python";
+      license = licenses.mit;
+      maintainers = [ maintainers.makefu ];
+    };
+  };
+
+  xstatic-jquery-ui = buildPythonPackage rec {
+    name = "XStatic-jquery-ui-${version}";
+    version = "1.11.0.1";
+    propagatedBuildInputs = with self; [ xstatic-jquery ];
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/X/XStatic-jquery-ui/XStatic-jquery-ui-${version}.tar.gz";
+      sha256 = "0n6sgg9jxrqfz4zg6iqdmx1isqx2aswadf7mk3fbi48dxcv1i6q9";
+    };
+
+    meta = {
+      homepage = http://jqueryui.com/;
+      description = "jquery-ui packaged static files for python";
+      license = licenses.mit;
+      maintainers = [ maintainers.makefu ];
+    };
+  };
+
+  xstatic-pygments = buildPythonPackage rec {
+    name = "XStatic-Pygments-${version}";
+    version = "1.6.0.1";
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/X/XStatic-Pygments/XStatic-Pygments-${version}.tar.gz";
+      sha256 = "0fjqgg433wfdnswn7fad1g6k2x6mf24wfnay2j82j0fwgkdxrr7m";
+    };
+
+    meta = {
+      homepage = http://pygments.org;
+      description = "pygments packaged static files for python";
+      license = licenses.bsd2;
+      maintainers = [ maintainers.makefu ];
+    };
+  };
+
+>>>>>>> a68d7db... pythonPackages.xstatic-*: init at 2015-10-05
 }; in pythonPackages
