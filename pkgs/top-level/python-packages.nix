@@ -17381,8 +17381,6 @@ let
     };
   };
 
-<<<<<<< HEAD
-=======
   willow = buildPythonPackage rec {
     name = "willow-${version}";
     version = "0.2.1";
@@ -17563,5 +17561,4 @@ let
     };
   };
 
->>>>>>> a68d7db... pythonPackages.xstatic-*: init at 2015-10-05
 }; in pythonPackages
