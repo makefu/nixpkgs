@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
   name = "calfw-1.3-5-ga9b6615";
 
   src = fetchgit {
-    url = "git://github.com/kiwanami/emacs-calfw.git";
+    url = "http://github.com/kiwanami/emacs-calfw.git";
     rev = "a9b6615b6666bbebe78257c557fd9a2e3a325d8d";
     sha256 = "524acc8fec7e64ebe0d370ddb1d96eee6a409d650b79011fa910c35225a7f393";
   };

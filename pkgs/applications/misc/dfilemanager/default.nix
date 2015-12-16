@@ -6,7 +6,7 @@ in
 stdenv.mkDerivation rec {
   name = "dfilemanager-${version}";
   src = fetchgit {
-    url = "git://git.code.sf.net/p/dfilemanager/code";
+    url = "http://git.code.sf.net/p/dfilemanager/code";
     rev = "806a28aa8fed30941a2fd6784c7c9c240bca30e3";
     sha256 = "1k15qzjmqg9ffv4cl809b071dpyckf8jspkhfhpbmfd9wasr0m7i";
   };

@@ -5,7 +5,7 @@ agda.mkDerivation (self: rec {
   name = "agda-stdlib-${version}";
 
   src = fetchgit {
-    url = "git://github.com/agda/agda-stdlib";
+    url = "http://github.com/agda/agda-stdlib";
     rev = "9c9b3cb28f9a7d39a256890a1469c1a3f7fc4faf";
     sha256 = "521899b820e70abbae7cb30008b87a2f8676bc6265b78865e42982fc2e5c972f";
   };

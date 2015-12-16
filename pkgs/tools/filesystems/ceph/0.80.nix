@@ -4,7 +4,7 @@ callPackage ./generic.nix (args // rec {
   version = "0.80.10";
 
   src = fetchgit {
-    url = "git://github.com/ceph/ceph.git";
+    url = "http://github.com/ceph/ceph.git";
     rev = "refs/tags/v${version}";
     sha256 = "1arajccczjdqp7igs17569xlq5cj4azcm5wwixg6ryypjr2grcbl";
   };

@@ -10,7 +10,7 @@ pythonPackages.buildPythonPackage rec {
   namePrefix = "";
 
   src = fetchgit {
-    url = "git://anonscm.debian.org/reproducible/diffoscope.git";
+    url = "http://anonscm.debian.org/reproducible/diffoscope.git";
     rev = "refs/tags/${version}";
     sha256 = "0q7hx2wm9gvzl1f7iilr9pjwpv8i2anscqan7cgk80v90s2pakrf";
   };

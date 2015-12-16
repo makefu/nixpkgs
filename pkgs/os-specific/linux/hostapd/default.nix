@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     homepage = http://hostap.epitest.fi;
-    repositories.git = git://w1.fi/hostap.git;
+    repositories.git = http://w1.fi/hostap.git;
     description = "A user space daemon for access point and authentication servers";
     license = licenses.gpl2;
     maintainers = with maintainers; [ phreedom wkennington ];

@@ -5,7 +5,7 @@ pythonPackages.buildPythonPackage rec {
   version = "0.4.1";
 
   src = fetchgit {
-    url = "git://github.com/pagekite/Mailpile";
+    url = "http://github.com/pagekite/Mailpile";
     rev = "refs/tags/${version}";
     sha256 = "0h84cc9kwb0m4admqjkpg4pllxlh095rmzvrql45kz71fpnxs780";
   };

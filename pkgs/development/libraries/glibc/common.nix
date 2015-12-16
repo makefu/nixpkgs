@@ -156,7 +156,7 @@ stdenv.mkDerivation ({
       # Shamefully the "official" glibc won't build on GNU, so use the one
       # maintained by the Hurd folks, `tschwinge/Roger_Whittaker' branch.
       # See <http://www.gnu.org/software/hurd/source_repositories/glibc.html>.
-      url = "git://git.sv.gnu.org/hurd/glibc.git";
+      url = "http://git.sv.gnu.org/hurd/glibc.git";
       sha256 = "cecec9dd5a2bafc875c56b058b6d7628a22b250b53747513dec304f31ffdb82d";
       rev = "d3cdecf18e6550b0984a42b43ed48c5fb26501e1";
     }

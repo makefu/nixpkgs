@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   name = "notbit-git-6f1ca59";
 
   src = fetchgit {
-    url = "git://github.com/bpeel/notbit";
+    url = "http://github.com/bpeel/notbit";
     rev = "6f1ca5987c7f217c9c3dd27adf6ac995004c29a1";
     sha256 = "0h9nzm248pw9wrdsfkr580ghiqvh6mk6vx7r2r752awrc13wvgis";
   };

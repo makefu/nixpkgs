@@ -6,7 +6,7 @@ stdenv.mkDerivation {
   name = "path64-2010-07-02";
 
   src = fetchgit {
-    url = git://github.com/path64/compiler.git;
+    url = http://github.com/path64/compiler.git;
     rev = "e17f7f952831bbf1d996";
     sha256 = "fa1320959e1131557d5f82e98f4621a222ec45e1d6e0e7f271d2c13de4fd0dd1";
   };

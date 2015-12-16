@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "urxvt-perls-2015-03-28";
 
   src = fetchgit {
-    url = "git://github.com/muennich/urxvt-perls";
+    url = "http://github.com/muennich/urxvt-perls";
     rev = "e4dbde31edd19e2f4c2b6c91117ee91e2f83ddd7";
     sha256 = "1f8a27c3d54377fdd4ab0be2f4efb8329d4900bb1c792b306dc23b5ee59260b1";
   };

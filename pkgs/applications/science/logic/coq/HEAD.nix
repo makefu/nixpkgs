@@ -16,7 +16,7 @@ stdenv.mkDerivation {
   inherit ocaml camlp5;
 
   src = fetchgit {
-    url = git://scm.gforge.inria.fr/coq/coq.git;
+    url = http://scm.gforge.inria.fr/coq/coq.git;
     rev = "0c999f02ffcd61fcace0cc2d045056a82992a100";
     sha256 = "1wk9lxdmw152665hr5cvnnzgnbbq7kg2845qkb4ag99nnfpsi26s";
   };

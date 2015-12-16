@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     homepage = http://git.zx2c4.com/cgit/about/;
-    repositories.git = git://git.zx2c4.com/cgit;
+    repositories.git = http://git.zx2c4.com/cgit;
     description = "Web frontend for git repositories";
     license = stdenv.lib.licenses.gpl2;
     platforms = stdenv.lib.platforms.linux;

@@ -6,7 +6,7 @@ stdenv.mkDerivation {
   name = "screenFetch-2015-04-20";
 
   src = fetchgit {
-    url = git://github.com/KittyKatt/screenFetch.git;
+    url = http://github.com/KittyKatt/screenFetch.git;
     rev = "53e1c0cccacf648e846057938a68dda914f532a1";
     sha256 = "1wyvy1sn7vnclwrzd32jqlq6iirjkhp2ak55brhkpp9rj1qxk3q6";
   };

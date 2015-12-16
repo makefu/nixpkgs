@@ -10,7 +10,7 @@ stdenv.mkDerivation {
   name = "sane-backends-1.0.24.73-g6c4f6bc";
 
   src = fetchgit {
-    url = "git://alioth.debian.org/git/sane/sane-backends.git";
+    url = "http://alioth.debian.org/git/sane/sane-backends.git";
     rev = "6c4f6bc58615755dc734281703b594cea3ebf848";
     sha256 = "0f7lbv1rnr53n4rpihcd8dkfm01xvwfnx9i1nqaadrzbpvgkjrfa";
   };

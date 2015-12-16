@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
   name = "emscripten-${tag}";
 
   src = fetchgit {
-    url = git://github.com/kripken/emscripten;
+    url = http://github.com/kripken/emscripten;
     rev = "refs/tags/${tag}";
     sha256 = "0d7ed2b801ac37acaf907bd03ba42cce3ac4a4c330bf1ef28de25bbb3f39ba87";
   };

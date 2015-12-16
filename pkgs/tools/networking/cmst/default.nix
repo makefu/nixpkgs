@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   name = "cmst-2014.12.05";
   rev = "refs/tags/${name}";
   src = fetchgit {
-    url = "git://github.com/andrew-bibb/cmst.git";
+    url = "http://github.com/andrew-bibb/cmst.git";
     inherit rev;
     sha256 = "070rxv3kyn41ra7nnk1wbqvy6fjg38h7hrdv4dn71b201kmzd194";
   };

@@ -6,7 +6,7 @@ pythonPackages.buildPythonPackage rec {
   version = "0.4.1";
 
   src = fetchgit {
-    url = "git://github.com/aszlig/LastWatch.git";
+    url = "http://github.com/aszlig/LastWatch.git";
     rev = "refs/tags/v${version}";
     sha256 = "c43f0fd87e9f3daafc7e8676daf2e89c8e21fbabc278eb1455e28d2997587a92";
   };

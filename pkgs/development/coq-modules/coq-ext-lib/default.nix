@@ -6,7 +6,7 @@ stdenv.mkDerivation rec {
   version = "c2c71a2a";
 
   src = fetchgit {
-    url = git://github.com/coq-ext-lib/coq-ext-lib.git;
+    url = http://github.com/coq-ext-lib/coq-ext-lib.git;
     rev = "c2c71a2a90ac87f2ceb311a6da53a6796b916816";
     sha256 = "01sihw3nmvvpc8viwyr01qnqifdcmlg016034xmrfmv863yp8c4g";
   };

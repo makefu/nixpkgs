@@ -16,7 +16,7 @@ let
     baseName="oneteam";
     version="git-head";
     name="${baseName}-${version}";
-    url="git://git.process-one.net/oneteam/oneteam.git";
+    url="http://git.process-one.net/oneteam/oneteam.git";
     rev="066cd861ea4436bbe363f032c58a746a1cac7498";
     hash="972310d6ef20db7dc749d7d935aa50889afe2004db2a07409830e09ef639f30a";
     method="fetchgit";
@@ -81,7 +81,7 @@ rec {
   };
   passthru = {
     updateInfo = {
-      downloadPage = "git://git.process-one.net/oneteam/oneteam.git";
+      downloadPage = "http://git.process-one.net/oneteam/oneteam.git";
     };
   };
 }) x

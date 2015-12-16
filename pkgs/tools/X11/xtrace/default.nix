@@ -4,7 +4,7 @@ let version = "1.3.1"; in
 stdenv.mkDerivation {
   name = "xtrace-${version}";
   src = fetchgit {
-    url = "git://git.debian.org/xtrace/xtrace.git";
+    url = "http://git.debian.org/xtrace/xtrace.git";
     rev = "refs/tags/xtrace-1.3.1";
     sha256 = "0csjw88ynzzcmx1jlb65c74r2sp9dzxn00airsxxfsipb74049d0";
   };

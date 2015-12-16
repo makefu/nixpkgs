@@ -539,7 +539,7 @@ let
     goPackagePath = "github.com/agl/ed25519";
     src = fetchgit {
       inherit rev;
-      url = "git://${goPackagePath}.git";
+      url = "http://${goPackagePath}.git";
       sha256 = "83e3010509805d1d315c7aa85a356fda69d91b51ff99ed98a503d63adb3613e9";
     };
   };

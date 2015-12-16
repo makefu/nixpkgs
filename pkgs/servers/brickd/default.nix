@@ -15,7 +15,7 @@ stdenv.mkDerivation rec {
   name = "brickd-${version}";
 
   src = fetchgit {
-    url = "git://github.com/Tinkerforge/brickd.git";
+    url = "http://github.com/Tinkerforge/brickd.git";
     rev = "refs/tags/v${version}";
     sha256 = "08g587bgx628g5vykh482wxiw0z98fmq4lf5ka6aw0v8l9gim9yf";
   };

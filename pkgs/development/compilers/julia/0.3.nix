@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
   src = fetchgit {
-    url = "git://github.com/JuliaLang/julia.git";
+    url = "http://github.com/JuliaLang/julia.git";
     rev = "refs/tags/v${version}";
     sha256 = "06xmv2l8hskdh1s5y2dh28vpb5pc0gzmfl5a03yp0qjjsl5cb284";
     name = "julia-git-v${version}";

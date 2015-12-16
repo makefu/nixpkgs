@@ -6,7 +6,7 @@
 let
   version = "0.1.2";
   src = fetchgit {
-    url = "git://github.com/matejc/nixui.git";
+    url = "http://github.com/matejc/nixui.git";
     rev = "refs/tags/${version}";
     sha256 = "0rq8q867j4fx5j8mkidbwgbzqj4w4xi45xr8ya79m6v3iqqblhhj";
   };

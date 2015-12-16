@@ -5,13 +5,13 @@ stdenv.mkDerivation rec {
   version = "0.5.2";
 
   go-sqlite3 = fetchgit {
-    url = "git://github.com/mattn/go-sqlite3";
+    url = "http://github.com/mattn/go-sqlite3";
     rev = "c9a0db5d8951646743317f0756da0339fe144dd5";
     sha256 = "0j01nr3q89qs9n9zzp8gsr94hl9v0gnis6hmndl9ms554bhlv99p";
   };
 
   go-fuse = fetchgit {
-    url = "git://github.com/hanwen/go-fuse";
+    url = "http://github.com/hanwen/go-fuse";
     rev = "8c85ded140ac1889372a0e22d8d21e3d10a303bd";
     sha256 = "1kssndvrbcxvf85x6c6lgn5kpcl7d788z3sxrv1szik4acb6n2sa";
   };

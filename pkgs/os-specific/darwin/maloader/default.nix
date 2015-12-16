@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "maloader-0git";
 
   src = fetchgit {
-    url = "git://github.com/shinh/maloader.git";
+    url = "http://github.com/shinh/maloader.git";
     rev = "5f220393e0b7b9ad0cf1aba0e89df2b42a1f0442";
     sha256 = "07j9b7n0grrbxxyn2h8pnk6pa8b370wq5z5zwbds8dlhi7q37rhn";
   };

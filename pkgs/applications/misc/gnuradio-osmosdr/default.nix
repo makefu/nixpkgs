@@ -10,7 +10,7 @@ stdenv.mkDerivation rec {
   version = "0.1.4";
 
   src = fetchgit {
-    url = "git://git.osmocom.org/gr-osmosdr";
+    url = "http://git.osmocom.org/gr-osmosdr";
     rev = "refs/tags/v${version}";
     sha256 = "0vyzr4fhkblf2v3d7m0ch5hws4c493jw3ydl4y6b2dfbfzchhsz8";
   };

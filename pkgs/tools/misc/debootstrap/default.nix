@@ -35,7 +35,7 @@ stdenv.mkDerivation {
   name = "debootstrap-1.0.67";
 
   src = fetchurl {
-    # git clone git://git.debian.org/d-i/debootstrap.git
+    # git clone http://git.debian.org/d-i/debootstrap.git
     # I'd like to use the source. However it's lacking the lanny script ? (still true?)
     url = mirror://debian/pool/main/d/debootstrap/debootstrap_1.0.67.tar.gz;
     sha256 = "06x5zw6fskw37qh62hvqx006319l4wgnnw8sf53ms67zpfif04ha";

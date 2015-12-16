@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl2Plus;
     platforms = lib.platforms.all;
     maintainers = [ lib.maintainers.wkennington ];
-    repositories.git = git://git.gnupg.org/libgcrypt.git;
+    repositories.git = http://git.gnupg.org/libgcrypt.git;
   };
 }

@@ -7,7 +7,7 @@ in
 stdenv.mkDerivation rec {
   name = "qca-qt5-20150422-${shortrev}";
   src = fetchgit {
-    url = "git://anongit.kde.org/qca.git";
+    url = "http://anongit.kde.org/qca.git";
     branchName = "qt5";
     inherit rev;
     sha256 = "fe1c7d5d6f38445a4032548ae3ea22c74d4327dfaf2dc88492a95facbca398f8";

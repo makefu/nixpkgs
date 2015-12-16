@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     homepage = http://qpid.apache.org;
-    repositories.git = git://git.apache.org/qpid.git;
+    repositories.git = http://git.apache.org/qpid.git;
     repositories.svn = http://svn.apache.org/repos/asf/qpid;
     description = "An AMQP message broker and a C++ messaging API";
     license = stdenv.lib.licenses.asl20;

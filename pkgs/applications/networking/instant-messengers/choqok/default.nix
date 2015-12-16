@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
 
   meta = with stdenv.lib; {
     description = "A KDE microblogging client";
-    repositories.git = git://anongit.kde.org/choqok;
+    repositories.git = http://anongit.kde.org/choqok;
     license = "GPL";
     inherit (kdelibs.meta) maintainers platforms;
   };

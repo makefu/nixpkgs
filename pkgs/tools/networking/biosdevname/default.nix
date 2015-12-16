@@ -6,7 +6,7 @@ stdenv.mkDerivation {
   name = "biosdevname-${version}";
   
   src = fetchgit {
-    url = git://linux.dell.com/biosdevname.git;
+    url = http://linux.dell.com/biosdevname.git;
     rev = "refs/tags/v${version}";
     sha256 = "11g2pziss0i65mr4y3mwjlcdgpygaxa06lr4q8plmrwl9cick1qa";
   };

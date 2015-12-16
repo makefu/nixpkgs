@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "scsh-0.7pre";
 
   src = fetchgit {
-    url = "git://github.com/scheme/scsh.git";
+    url = "http://github.com/scheme/scsh.git";
     rev = "f99b8c5293628cfeaeb792019072e3a96841104f";
     fetchSubmodules = true;
     sha256 = "0fz1r0bmiii9ld91r84dqkqwhnqk0h6drdycq93zcy5ndyn12fqp";

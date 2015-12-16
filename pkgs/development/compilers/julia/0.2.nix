@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
   };
 
   src = fetchgit {
-    url = "git://github.com/JuliaLang/julia.git";
+    url = "http://github.com/JuliaLang/julia.git";
     rev = "refs/tags/v${version}";
     sha256 = "7ee0f267bc1ae286764ced3c0c695c335a6f8d67bd7b3ca7e4de259333c9426a";
   };

@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
   name = "ardour3-git-${version}";
 
   src = fetchgit {
-    url = git://git.ardour.org/ardour/ardour.git;
+    url = http://git.ardour.org/ardour/ardour.git;
     rev = "7024232855d268633760674d34c096ce447b7240";
     sha256 = "ede3730455c3c91b2fd612871fa7262bdacd3dff4ba77c5dfbc3c1f0de9b8a36";
   };

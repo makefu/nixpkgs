@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   src = fetchgit {
     inherit rev;
-    url = "git://git.code.sf.net/p/guvcview/git-master";
+    url = "http://git.code.sf.net/p/guvcview/git-master";
     sha256 = "08cpbxq3dh2mlsgzk5dj3vfrgap4q281n9h6xzpbsvyifcj1a9n1";
   };
 

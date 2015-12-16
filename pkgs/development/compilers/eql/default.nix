@@ -13,7 +13,7 @@ let
   sourceInfo = rec {
     method = "fetchgit";
     rev = "9097bf98446ee33c07bb155d800395775ce0d9b2";
-    url = "git://gitorious.org/eql/eql";
+    url = "http://gitorious.org/eql/eql";
     hash = "1fp88xmmk1sa0iqxahfiv818bp2sbf66vqrd4xq9jb731ybdvsb8";
     version = rev;
     name = "eql-git-${version}";
@@ -81,7 +81,7 @@ rec {
       downloadPage = "http://password-taxi.at/EQL";
       method = "fetchgit";
       rev = "370b7968fd73d5babc81e35913a37111a788487f";
-      url = "git://gitorious.org/eql/eql";
+      url = "http://gitorious.org/eql/eql";
       hash = "2370e111d86330d178f3ec95e8fed13607e51fed8859c6e95840df2a35381636";
     };
     inherit srcDrv;

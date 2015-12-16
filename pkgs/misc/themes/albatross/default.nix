@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "1.7.3";
 
   src = fetchgit {
-    url = git://github.com/shimmerproject/Albatross.git;
+    url = http://github.com/shimmerproject/Albatross.git;
     rev = "refs/tags/v${version}";
     sha256 = "7a585068dd59f753149c0d390f2ef541f2ace67e7d681613588edb9f962e3196";
   };

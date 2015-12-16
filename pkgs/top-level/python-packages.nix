@@ -4112,7 +4112,7 @@ let
   logster = buildPythonPackage {
     name = "logster-7475c53822";
     src = pkgs.fetchgit {
-      url = git://github.com/etsy/logster;
+      url = http://github.com/etsy/logster;
       rev = "7475c53822";
       sha256 = "1ls007qmziwb50c5iikxhqin0xbn673gbd25m5k09861435cknvr";
     };
@@ -8987,7 +8987,7 @@ let
     disabled = isPy3k;
 
     src = pkgs.fetchgit {
-      url = git://gitorious.org/opensuse/osc.git;
+      url = http://gitorious.org/opensuse/osc.git;
       rev = "6cd541967ee2fca0b89e81470f18b97a3ffc23ce";
       sha256 = "a39ce0e321e40e9758bf7b9128d316c71b35b80eabc84f13df492083bb6f1cc6";
     };
@@ -13601,7 +13601,7 @@ let
   #   name = "svneverever-778489a8";
   #
   #   src = pkgs.fetchgit {
-  #     url = git://git.goodpoint.de/svneverever.git;
+  #     url = http://git.goodpoint.de/svneverever.git;
   #     rev = "778489a8c6f07825fb18c9da3892a781c3d659ac";
   #     sha256 = "41c9da1dab2be7b60bff87e618befdf5da37c0a56287385cb0cbd3f91e452bb6";
   #   };
@@ -14314,7 +14314,7 @@ let
     meta = {
       description = "A full-featured console (xterm et al.) user interface library";
       homepage = http://excess.org/urwid;
-      repositories.git = git://github.com/wardi/urwid.git;
+      repositories.git = http://github.com/wardi/urwid.git;
       license = licenses.lgpl21;
       maintainers = with maintainers; [ garbas ];
     };
@@ -14336,7 +14336,7 @@ let
     meta = {
       description = "Python interface for libuv";
       homepage = https://github.com/saghul/pyuv;
-      repositories.git = git://github.com/saghul/pyuv.git;
+      repositories.git = http://github.com/saghul/pyuv.git;
       license = licenses.mit;
     };
   };

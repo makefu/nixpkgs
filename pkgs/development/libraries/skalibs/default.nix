@@ -9,7 +9,7 @@ in stdenv.mkDerivation rec {
   name = "skalibs-${version}";
 
   src = fetchgit {
-    url = "git://git.skarnet.org/skalibs";
+    url = "http://git.skarnet.org/skalibs";
     rev = "refs/tags/v${version}";
     sha256 = "03kqcinb5sn1pk297nqg7w5hzgmkkhhcs3l9x99w1x9kgmw6wisp";
   };

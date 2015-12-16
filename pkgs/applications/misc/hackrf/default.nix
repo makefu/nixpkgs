@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "2015.07.2";
 
   src = fetchgit {
-    url = "git://github.com/mossmann/hackrf";
+    url = "http://github.com/mossmann/hackrf";
     rev = "refs/tags/v${version}";
     sha256 = "0wa4m0kdq8q2ib724w8ry8shmmm1liaaawhjygrjx6zxz9jxr3vm";
   };

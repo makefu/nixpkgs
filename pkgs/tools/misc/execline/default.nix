@@ -9,7 +9,7 @@ in stdenv.mkDerivation rec {
   name = "execline-${version}";
 
   src = fetchgit {
-    url = "git://git.skarnet.org/execline";
+    url = "http://git.skarnet.org/execline";
     rev = "refs/tags/v${version}";
     sha256 = "0p9wp1rq8010k5yxlvamajhi6m24r9v7ikb7scvznf6zb2b0d9hf";
   };

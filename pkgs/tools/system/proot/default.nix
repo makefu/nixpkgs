@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "4.0.3";
 
   src = fetchgit {
-    url = "git://github.com/cedric-vincent/proot.git";
+    url = "http://github.com/cedric-vincent/proot.git";
     rev = "refs/tags/v${version}";
     sha256 = "95a52b2fa47b2891eb2c6b6b0e14d42f6d48f6fd5181e359b007831f1a046e84";
   };

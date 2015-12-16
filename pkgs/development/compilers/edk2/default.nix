@@ -13,7 +13,7 @@ edk2 = stdenv.mkDerivation {
   name = "edk2-2014-12-10";
   
   src = fetchgit {
-    url = git://github.com/tianocore/edk2;
+    url = http://github.com/tianocore/edk2;
     rev = "684a565a04";
     sha256 = "1l46396f48v91z5b8lh3b0f0lcd7z5f86i1nrpc7l5gf7gx3117j";
   };

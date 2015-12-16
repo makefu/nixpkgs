@@ -3,7 +3,7 @@
 stdenv.mkDerivation {
   name = "alsamixer.app-0.2.1";
   src = fetchgit {
-     url = git://repo.or.cz/dockapps.git;
+     url = http://repo.or.cz/dockapps.git;
      rev = "38c74350b02f35824554ce0c4f0f251d71762040";
      sha256 = "0g9cwhlqg065fbhav4g4n16a4cqkk9jykl3y0zwbn5whhacfqyhl";
   };

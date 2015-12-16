@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
   meta = with stdenv.lib; {
     description = "Sets your computer's clock from time servers on the Net";
     homepage = http://chrony.tuxfamily.org/;
-    repository.git = git://git.tuxfamily.org/gitroot/chrony/chrony.git;
+    repository.git = http://git.tuxfamily.org/gitroot/chrony/chrony.git;
     license = licenses.gpl2;
     platforms = with platforms; linux ++ freebsd ++ openbsd;
     maintainers = [ maintainers.rickynils ];

@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     '';
     platforms = platforms.unix;
     maintainers = [ maintainers.linus ];
-    repositories.git = git://github.com/imneme/pcg-c.git;
+    repositories.git = http://github.com/imneme/pcg-c.git;
     broken = stdenv.isi686; # https://github.com/imneme/pcg-c/issues/11
   };
 }

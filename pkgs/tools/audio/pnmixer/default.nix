@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   name = "pnmixer-2014-07-24";
 
   src = fetchgit {
-    url = "git://github.com/nicklan/pnmixer.git";
+    url = "http://github.com/nicklan/pnmixer.git";
     rev = "1e09a075c0c63d8b161b13ea92528a798bdb464a";
     sha256 = "15k689xycpc6pvq9vgg9ak92b9sg09dh4yrh83kjcaws63alrzl5";
   };

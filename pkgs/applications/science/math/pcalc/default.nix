@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
   version = "20141224";
 
   src = fetchgit {
-    url = git://git.code.sf.net/p/pcalc/code;
+    url = http://git.code.sf.net/p/pcalc/code;
     rev = "181d60d3c880da4344fef7138065943eb3b9255f";
     sha256 = "0n60m3p4kkqvvswjf50mnfaaacmzi1lss8vgy63mrgzwi9v6yb4l";
   };

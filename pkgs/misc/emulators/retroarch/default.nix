@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
   version = "20141224";
 
   src = fetchgit {
-    url = git://github.com/libretro/RetroArch.git;
+    url = http://github.com/libretro/RetroArch.git;
     rev = "8b4176263988e750daf0c6d709fdceb4672e111e";
     sha256 = "1l2iqgb7vlkh6kcwr4ggcn58ldyh63v9zvjmv26z8pxiqa1zr1xs";
   };

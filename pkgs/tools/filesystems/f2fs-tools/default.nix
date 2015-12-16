@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "1.4.1";
 
   src = fetchgit {
-    url = git://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git;
+    url = http://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git;
     rev = "refs/tags/v${version}";
     sha256 = "16i74r2656q6x4gg5kgjy2fxipr5czbm10r66s34pi2lfczbwhjr";
   };

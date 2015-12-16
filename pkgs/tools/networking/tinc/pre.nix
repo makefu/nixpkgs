@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   name = "tinc-1.1pre-2015-07-22";
 
   src = fetchgit {
-    url = "git://tinc-vpn.org/tinc";
+    url = "http://tinc-vpn.org/tinc";
     rev = "56a8b90d863171d62e0a337b5635fbfc53a67fb0";
     sha256 = "081z4xs5l988g1s0yr7fvnysajd05bx6s54sh84jvq7ij8af71dm";
   };

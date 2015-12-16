@@ -8,7 +8,7 @@ stdenv.mkDerivation {
   name = "mig-${date}";
 
   src = fetchgit {
-    url = "git://git.sv.gnu.org/hurd/mig.git";
+    url = "http://git.sv.gnu.org/hurd/mig.git";
     sha256 = "d6958d9b60925d4600aac133c9505bc873a16b203c69260bd0fb228922ee9273";
     inherit rev;
   };
