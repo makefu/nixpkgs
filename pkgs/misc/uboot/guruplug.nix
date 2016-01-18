@@ -13,7 +13,7 @@ stdenv.mkDerivation {
   name = "uboot-guruplug-0.0-pre-${stdenv.lib.strings.substring 0 7 rev}";
 
   src = fetchgit {
-    url = "git://git.denx.de/u-boot-marvell.git";
+    url = "http://git.denx.de/u-boot-marvell.git";
     sha256 = "18gwyj16vml7aja9cyan51jwfcysy4cs062z7wmgdc0l9bha6iw7";
     inherit rev;
   };

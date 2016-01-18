@@ -11,7 +11,7 @@ stdenv.mkDerivation ({
   name = "gnumach${if headersOnly then "-headers" else ""}-${date}";
 
   src = fetchgit {
-    url = "git://git.sv.gnu.org/hurd/gnumach.git";
+    url = "http://git.sv.gnu.org/hurd/gnumach.git";
     sha256 = "6db17d091d410fb573e15ae5d59d860a17d78b2073f605c1dc1473f6f2c25ccc";
     inherit rev;
   };

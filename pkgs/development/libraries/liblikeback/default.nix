@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   name = "liblikeback-20110103";
 
   src = fetchgit {
-    url = git://anongit.kde.org/liblikeback.git;
+    url = http://anongit.kde.org/liblikeback.git;
     rev = "eeb037ae16b6aad8d73cbd6f57198aa111a88628";
     sha256 = "1p3c8hqfcbhjfyn1kj636kq52nb3vapfakmqvp2wklpljyq38f3z";
   };

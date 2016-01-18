@@ -13,7 +13,7 @@ buildRustPackage rec {
 
   # Needs to use fetchgit instead of fetchFromGitHub to fetch submodules
   src = fetchgit {
-    url = "git://github.com/rust-lang/cargo";
+    url = "http://github.com/rust-lang/cargo";
     rev = "refs/tags/${version}";
     sha256 = "139rv7d6mk31klbnccmn573i05ygjrnflag6c3qwc075i62yfmx6";
   };

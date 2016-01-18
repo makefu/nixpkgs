@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
   version = "20150605-${builtins.substring 0 7 revision}";
 
   src = fetchgit {
-    url = git://github.com/QuickChick/QuickChick.git;
+    url = http://github.com/QuickChick/QuickChick.git;
     rev = revision;
     sha256 = "1yql40x1zbrc6wzfafvfaxzhw57v1n468lxdv1rvsjd7gyyf74y7";
   };
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   installFlags = "COQLIB=$(out)/lib/coq/${coq.coq-version}/";
 
   meta = with stdenv.lib; {
-    homepage = git://github.com/QuickChick/QuickChick.git;
+    homepage = http://github.com/QuickChick/QuickChick.git;
     description = "Randomized property-based testing plugin for Coq; a clone of Haskell QuickCheck";
     maintainers = with maintainers; [ jwiegley ];
     platforms = coq.meta.platforms;

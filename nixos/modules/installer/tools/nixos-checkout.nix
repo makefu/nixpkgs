@@ -45,8 +45,8 @@ let
             echo "Updating repository in $prefix/nixpkgs..."
         fi
         cd nixpkgs
-        git remote add origin git://github.com/NixOS/nixpkgs.git || true
-        git remote add channels git://github.com/NixOS/nixpkgs-channels.git || true
+        git remote add origin http://github.com/NixOS/nixpkgs.git || true
+        git remote add channels http://github.com/NixOS/nixpkgs-channels.git || true
         git remote set-url origin --push git@github.com:NixOS/nixpkgs.git
         git remote update
         git checkout master

@@ -7,7 +7,7 @@ in stdenv.mkDerivation rec {
   version = "21-git-2015-07-30";
 
   src = fetchgit {
-    url = "git://repo.or.cz/llpp.git";
+    url = "http://repo.or.cz/llpp.git";
     rev = "e9fe06d684b145a104cc319673076e069e853cac";
     sha256 = "0x3hgn6sfjln2sqdw40ylcj943rn732a6mlfwz01llx8ykiyvsvq";
     fetchSubmodules = false;

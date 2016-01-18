@@ -21916,14 +21916,14 @@
   };
   by-spec."keypress"."~0.2.1" =
     self.by-version."keypress"."0.2.1";
-  by-spec."kibana-authentication-proxy"."git://github.com/fangli/kibana-authentication-proxy.git" =
+  by-spec."kibana-authentication-proxy"."http://github.com/fangli/kibana-authentication-proxy.git" =
     self.by-version."kibana-authentication-proxy"."1.1.0";
   by-version."kibana-authentication-proxy"."1.1.0" = self.buildNodePackage {
     name = "kibana-authentication-proxy-1.1.0";
     version = "1.1.0";
     bin = false;
     src = fetchgit {
-      url = "git://github.com/fangli/kibana-authentication-proxy.git";
+      url = "http://github.com/fangli/kibana-authentication-proxy.git";
       rev = "0c0173b0cb51b392b7fc04d0cc728ffb64671ef3";
       sha256 = "dd2e42da959c359bf48d16993c6caf1d810241f7f37dfa4da911dd284571236f";
     };
@@ -27750,7 +27750,7 @@
     version = "1.1.7";
     bin = false;
     src = fetchgit {
-      url = "git://github.com/schamane/node-syslog.git";
+      url = "http://github.com/schamane/node-syslog.git";
       rev = "30d445559617d439714418cdc1e847efbb49c5a0";
       sha256 = "d24a821603d8a4745839f5d90dc6bf63b5e286acf29a149ba3e412c5755a88ca";
     };
@@ -29016,14 +29016,14 @@
     os = [ ];
     cpu = [ ];
   };
-  by-spec."npm2nix"."git://github.com/NixOS/npm2nix.git#5.12.0" =
+  by-spec."npm2nix"."http://github.com/NixOS/npm2nix.git#5.12.0" =
     self.by-version."npm2nix"."5.12.0";
   by-version."npm2nix"."5.12.0" = self.buildNodePackage {
     name = "npm2nix-5.12.0";
     version = "5.12.0";
     bin = true;
     src = fetchgit {
-      url = "git://github.com/NixOS/npm2nix.git";
+      url = "http://github.com/NixOS/npm2nix.git";
       rev = "0c06be7d278a7f64fc853a5fd42d2031d14496d5";
       sha256 = "fb79dccb5ca4bfa0c8cc4490be37313367eb98e216d8eb97cb00f9e492e8e7a7";
     };
@@ -30853,14 +30853,14 @@
     self.by-version."passport"."0.1.18";
   by-spec."passport"."~0.2.1" =
     self.by-version."passport"."0.2.1";
-  by-spec."passport-bitly"."git://github.com/simov/passport-bitly.git" =
+  by-spec."passport-bitly"."http://github.com/simov/passport-bitly.git" =
     self.by-version."passport-bitly"."0.1.0";
   by-version."passport-bitly"."0.1.0" = self.buildNodePackage {
     name = "passport-bitly-0.1.0";
     version = "0.1.0";
     bin = false;
     src = fetchgit {
-      url = "git://github.com/simov/passport-bitly.git";
+      url = "http://github.com/simov/passport-bitly.git";
       rev = "838ce018873eb4b8bb23331216c78e2822c6493f";
       sha256 = "7cb69e2ca9ef5cf47fecf0d669f15c0366174183ec0c7623ad5a619365c36e8a";
     };
@@ -32899,14 +32899,14 @@
   };
   by-spec."punycode"."~1.2.4" =
     self.by-version."punycode"."1.2.4";
-  by-spec."pure-css"."git://github.com/yui/pure.git#v0.5.0-rc-1" =
+  by-spec."pure-css"."http://github.com/yui/pure.git#v0.5.0-rc-1" =
     self.by-version."pure-css"."0.5.0-rc-1";
   by-version."pure"."0.5.0-rc-1" = self.buildNodePackage {
     name = "pure-0.5.0-rc-1";
     version = "0.5.0-rc-1";
     bin = false;
     src = fetchgit {
-      url = "git://github.com/yui/pure.git";
+      url = "http://github.com/yui/pure.git";
       rev = "f5ce3ae4b48ce252adac7b6ddac50c9518729a2d";
       sha256 = "049ac2ef812771852978d11cd5aecac2dd561e97bb16ad89c79eb1e10aa57672";
     };

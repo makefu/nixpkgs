@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     license          = stdenv.lib.licenses.asl20;
     platforms        = stdenv.lib.platforms.all;
     maintainers      = with maintainers; [ thoughtpolice offline ];
-    repositories.git = git://git.apache.org/spark.git;
+    repositories.git = http://git.apache.org/spark.git;
   };
 }

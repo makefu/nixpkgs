@@ -6,7 +6,7 @@ stdenv.mkDerivation {
   name = "libetpan-${version}";
 
   src = fetchgit {
-    url = "git://github.com/dinhviethoa/libetpan";
+    url = "http://github.com/dinhviethoa/libetpan";
     rev = "refs/tags/" + version;
     sha256 = "12n0vd0bwdyjcmwmpv1hdq5l04mqy6qfyy8mhsblddqaa1ah9qy8";
   };

@@ -7,7 +7,7 @@ stdenv.mkDerivation {
   name = "git-bz";
 
   src = fetchgit {
-    url = "git://git.fishsoup.net/git-bz";
+    url = "http://git.fishsoup.net/git-bz";
     rev = "refs/heads/master";
   };
 

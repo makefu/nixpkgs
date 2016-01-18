@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "1.133";
 
   src = fetchgit {
-    url = "git://anonscm.debian.org/d-i/console-setup.git";
+    url = "http://anonscm.debian.org/d-i/console-setup.git";
     rev = "refs/tags/${version}";
     sha256 = "0za7y5v5rsl9da67rfiwzyfaia4xgnavqdadq0l6v8blc2kcsxr7";
   };

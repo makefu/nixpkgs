@@ -2569,7 +2569,7 @@
     version = "1.0.5";
     bin = false;
     src = fetchgit {
-      url = "git://github.com/keybase/read";
+      url = "http://github.com/keybase/read";
       rev = "740ae6a1a72a96984ae3527eb0ce0066c9fc8d47";
       sha256 = "927ce6e6e88c80c54b434261afb5717630568b6979afffc6828c4fc0335e22ec";
     };

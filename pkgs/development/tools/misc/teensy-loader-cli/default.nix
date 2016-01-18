@@ -5,7 +5,7 @@ in
 stdenv.mkDerivation {
   name = "teensy-loader-cli-${version}";
   src = fetchgit {
-    url = "git://github.com/PaulStoffregen/teensy_loader_cli.git";
+    url = "http://github.com/PaulStoffregen/teensy_loader_cli.git";
     rev = "001da416bc362ff24485ff97e3a729bd921afe98";
     sha256 = "36aed0a725055e36d71183ff57a023993099fdc380072177cffc7676da3c3966";
   };

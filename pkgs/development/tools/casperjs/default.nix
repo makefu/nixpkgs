@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   name = "casperjs-1.0.0-RC5";
 
   src = fetchgit {
-    url = "git://github.com/n1k0/casperjs.git";
+    url = "http://github.com/n1k0/casperjs.git";
     rev = "refs/tags/1.0.0-RC5";
     sha256 = "e7fd6b94b4b304416159196208dea7f6e8841a667df102eb378a698a92f0f2c7";
   };

@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   name = "ntk-${version}";
   version = "2014-10-18";
   src = fetchgit {
-    url = "git://git.tuxfamily.org/gitroot/non/fltk.git";
+    url = "http://git.tuxfamily.org/gitroot/non/fltk.git";
     rev = "5719b0044d9f267de5391fab006370cc7f4e70bd";
     sha256 = "7ecedb049e00cc9a1bb0e0e2f02e5a734c873653b68551e6573474c04abe1821";
   };

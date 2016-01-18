@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
   builder = ./builder.sh;
 
   src = fetchgit {
-    url = "git://git.savannah.gnu.org/emacs.git";
+    url = "http://git.savannah.gnu.org/emacs.git";
     rev = "1b5630eb47d3f4bade09708c958ab006b83b3fc0";
     sha256 = "0n3qbri84akmy7ad1pbv89j4jn4x9pnkz0p4nbhh6m1c37cbz58l";
   };

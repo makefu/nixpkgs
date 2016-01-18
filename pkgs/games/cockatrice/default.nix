@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
     ];
 
     meta = {
-        repositories.git = git://github.com/Cockatrice/Cockatrice.git;
+        repositories.git = http://github.com/Cockatrice/Cockatrice.git;
         description = "A cross-platform virtual tabletop for multiplayer card games";
         license = stdenv.lib.licenses.gpl2;
         maintainers = with stdenv.lib.maintainers; [ spencerjanssen ];

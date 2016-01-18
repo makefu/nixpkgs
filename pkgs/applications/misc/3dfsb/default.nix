@@ -13,7 +13,7 @@ stdenv.mkDerivation {
   };
 
   src = fetchgit {
-    url = "git://github.com/tomvanbraeckel/3dfsb.git";
+    url = "http://github.com/tomvanbraeckel/3dfsb.git";
     rev = "a69a9dfad42acbe2816328d11b58b65f4186c4c5";
     sha256 = "191ndg4vfanjfx4qh186sszyy4pphx3l41rchins9mg8y5rm5ffp";
   };

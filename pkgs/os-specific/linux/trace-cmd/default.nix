@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "2.6";
 
   src = fetchgit {
-    url    = "git://git.kernel.org/pub/scm/linux/kernel/git/rostedt/trace-cmd.git";
+    url    = "http://git.kernel.org/pub/scm/linux/kernel/git/rostedt/trace-cmd.git";
     rev    = "refs/tags/trace-cmd-v${version}";
     sha256 = "42286440a45d1b24552a1d3cdb656dc648ad346fc426b5798bacdbffd3c4b226";
   };

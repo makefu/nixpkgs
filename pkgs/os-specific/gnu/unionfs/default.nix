@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
   name = "unionfs-${date}";
 
   src = fetchgit {
-    url = "git://git.sv.gnu.org/hurd/unionfs.git";
+    url = "http://git.sv.gnu.org/hurd/unionfs.git";
     sha256 = "1c3d71112cb25f8f82719a16df936e43abcb1adb77af96c1bb100a8ad0889d65";
     inherit rev;
   };

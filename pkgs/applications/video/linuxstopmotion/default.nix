@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
   name = "linuxstopmotion-${version}";
   
   src = fetchgit {
-    url = "git://git.code.sf.net/p/linuxstopmotion/code";
+    url = "http://git.code.sf.net/p/linuxstopmotion/code";
     rev = "refs/tags/${version}";
     sha256 = "1xkkrhllgy2d7k0vrdj794ya7y3g3n7xh8c2qgnb26yrarz79dqj";
   };

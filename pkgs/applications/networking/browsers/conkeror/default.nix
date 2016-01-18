@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "conkeror-1.0pre-20150730";
 
   src = fetchgit {
-    url = git://repo.or.cz/conkeror.git;
+    url = http://repo.or.cz/conkeror.git;
     rev = "a1f7e879b129df5cf14ea4ce80a9c1407380ed58";
     sha256 = "12d8949a81a670037664dd930f7efe3d54b321aad48deea68343eba9aaea8785";
   };

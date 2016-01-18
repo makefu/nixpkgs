@@ -13,7 +13,7 @@ stdenv.mkDerivation rec {
 
   meta = with stdenv.lib; {
     homepage = "http://www.cypherpunks.ca/otr/";
-    repositories.git = git://git.code.sf.net/p/otr/libotr;
+    repositories.git = http://git.code.sf.net/p/otr/libotr;
     license = licenses.lgpl21;
     description = "Library for Off-The-Record Messaging";
     maintainers = with maintainers; [ wkennington ];

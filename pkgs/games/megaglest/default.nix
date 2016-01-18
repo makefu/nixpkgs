@@ -19,7 +19,7 @@ stdenv.mkDerivation {
   name = "megaglest-${version}";
 
   src = fetchgit {
-    url = "git://github.com/MegaGlest/megaglest-source";
+    url = "http://github.com/MegaGlest/megaglest-source";
     rev = "refs/tags/${version}";
     sha256 = "0jdgcpsv16vdxkwym7pw764pggifn4g98f3dzg615xl9h4wkymm0";
   };

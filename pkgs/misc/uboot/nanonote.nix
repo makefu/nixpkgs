@@ -14,7 +14,7 @@ stdenv.mkDerivation {
   };
 
   srcPatches = fetchgit {
-    url = "git://projects.qi-hardware.com/openwrt-xburst.git";
+    url = "http://projects.qi-hardware.com/openwrt-xburst.git";
     rev = "3244d5ef9f93802f9b9b6f4405636424abf6fa83";
     sha256 = "99dde9c3c4c66722d3ee2223d306bc84289a8aa77d0b5918ca49c2f4032ab38f";
   };

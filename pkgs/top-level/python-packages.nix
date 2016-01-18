@@ -5887,7 +5887,7 @@ in modules // {
   logster = buildPythonPackage {
     name = "logster-7475c53822";
     src = pkgs.fetchgit {
-      url = git://github.com/etsy/logster;
+      url = http://github.com/etsy/logster;
       rev = "7475c53822";
       sha256 = "1ls007qmziwb50c5iikxhqin0xbn673gbd25m5k09861435cknvr";
     };
@@ -19880,7 +19880,7 @@ in modules // {
     meta = {
       description = "A full-featured console (xterm et al.) user interface library";
       homepage = http://excess.org/urwid;
-      repositories.git = git://github.com/wardi/urwid.git;
+      repositories.git = http://github.com/wardi/urwid.git;
       license = licenses.lgpl21;
       maintainers = with maintainers; [ garbas ];
     };
@@ -19902,7 +19902,7 @@ in modules // {
     meta = {
       description = "Python interface for libuv";
       homepage = https://github.com/saghul/pyuv;
-      repositories.git = git://github.com/saghul/pyuv.git;
+      repositories.git = http://github.com/saghul/pyuv.git;
       license = licenses.mit;
     };
   };

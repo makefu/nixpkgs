@@ -14,7 +14,7 @@ let
   gitRelease = { libName, version, rev, sha256 } : attrs : attrs // {
     name = libName + "-" + version;
     src = args.fetchgit {
-      url = git://anongit.freedesktop.org/xorg/lib/ + libName;
+      url = http://anongit.freedesktop.org/xorg/lib/ + libName;
       inherit rev sha256;
     };
     buildInputs = attrs.buildInputs ++ [ xorg.utilmacros  ];

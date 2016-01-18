@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "0.2git";
 
   src = fetchgit {
-    url = "git://github.com/purcell/darcs-to-git.git";
+    url = "http://github.com/purcell/darcs-to-git.git";
     rev = "58a55936899c7e391df5ae1326c307fbd4617a25";
     sha256 = "366aa691920991e21cfeebd4cbd53a6c42d80e2bc46ff398af482d1d15bac4c3";
   };

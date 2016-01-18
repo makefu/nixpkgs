@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
   rev = "28638dfe79e915f33d75a1b22c5adce9e2b62b97";
 
   src = fetchgit {
-    url = "git://git.haskell.org/ghc.git";
+    url = "http://git.haskell.org/ghc.git";
     inherit rev;
     sha256 = "0rjzkzn0hz1vdnjikcbwfs5ggs8r3y4gqxfdn4jzfp45gx94wiwv";
   };

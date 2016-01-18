@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "0.5.3";
 
   src = fetchgit {
-    url = "git://git.osmocom.org/rtl-sdr.git";
+    url = "http://git.osmocom.org/rtl-sdr.git";
     rev = "refs/tags/v${version}";
     sha256 = "00r5d08r12zzkd0xggd7l7p4r2278rzdhqdaihwjlajmr9qd3hs1";
   };

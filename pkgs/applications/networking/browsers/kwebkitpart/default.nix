@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "1.3.3";
 
   src = fetchgit {
-    url = git://anongit.kde.org/kwebkitpart;
+    url = http://anongit.kde.org/kwebkitpart;
     rev = "refs/tags/v${version}";
     sha256 = "0kszffgg3zpf319lmzlmdba5gq8kdr5xwb69xwy4s2abc9nvwvbi";
   };

@@ -10,7 +10,7 @@ in
     version = gitTag;
 
     src  = fetchgit {
-      url         = "git://github.com/mkeeter/antimony.git";
+      url         = "http://github.com/mkeeter/antimony.git";
       rev         = gitRev;
       sha256      = "19ir3y5ipmfyygcn8mbxika4j3af6dfrv54dvhn6maz7dy8h30f4";
     };

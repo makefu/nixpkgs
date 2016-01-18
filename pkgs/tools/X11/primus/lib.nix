@@ -8,7 +8,7 @@ stdenv.mkDerivation {
   name = "primus-lib-20151204";
 
   src = fetchgit {
-    url = git://github.com/amonakov/primus.git;
+    url = http://github.com/amonakov/primus.git;
     rev = "d1afbf6fce2778c0751eddf19db9882e04f18bfd";
     sha256 = "8f095b5e2030cdb155a42a49873832843c1e4dc3087a6fb94d198de982609923";
   };

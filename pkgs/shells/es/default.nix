@@ -8,7 +8,7 @@ stdenv.mkDerivation {
   name = "es-${version}";
 
   src = fetchgit {
-    url = "git://github.com/wryun/es-shell";
+    url = "http://github.com/wryun/es-shell";
     rev = "fdf29d5296ce3a0ef96d2b5952cff07878753975";
     sha256 = "1hj0g8r59ry9l50h4gdal38nf8lvb3cgl6c9bx5aabkw5i778dfk";
   };

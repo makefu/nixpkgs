@@ -34,7 +34,7 @@ in
         description = ''
           Remap all the path requests as relative to the given path. For example,
           if you set base-path to /srv/git, then if you later try to pull
-          git://example.com/hello.git, Git daemon will interpret the path as /srv/git/hello.git.
+          http://example.com/hello.git, Git daemon will interpret the path as /srv/git/hello.git.
         '';
       };
 

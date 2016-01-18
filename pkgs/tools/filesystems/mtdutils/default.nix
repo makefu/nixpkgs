@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "1.5.1";
 
   src = fetchgit {
-    url = git://git.infradead.org/mtd-utils.git;
+    url = http://git.infradead.org/mtd-utils.git;
     rev = "refs/tags/v" + version;
     sha256 = "1bjx42pwl789ara63c672chvgvmqhkj4y132gajqih6naq71f8g7";
   };

@@ -11,7 +11,7 @@ pythonPackages.buildPythonPackage rec {
   namePrefix = "";
 
   src = fetchgit {
-    url = "git://anonscm.debian.org/reproducible/diffoscope.git";
+    url = "http://anonscm.debian.org/reproducible/diffoscope.git";
     rev = "refs/tags/${version}";
     sha256 = "1wdphcmr2n0pyg7zwvczy7ik1bzjlrjb76jwbzk971lwba3ajazk";
   };

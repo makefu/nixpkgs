@@ -5967,7 +5967,7 @@
     "matrix-client": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://fort.kickass.systems/personal/rrix/pub/matrix.el",
+            "url": "http://fort.kickass.systems/personal/rrix/pub/matrix.el",
             "sha256": "28022465db474430300c3776165eb2cb7a243c476332da09d7558bc3051b2448",
             "rev": "26e4696de28a12d9ac2d3af43bedc871f47f4dad"
         },
@@ -17008,7 +17008,7 @@
     "stumpwm-mode": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://git.savannah.nongnu.org/stumpwm.git",
+            "url": "http://git.savannah.nongnu.org/stumpwm.git",
             "sha256": "3547616b9e5694fd09014bbbf29458ee0dea828428b6bf7a6231670aacfb8271",
             "rev": "61a7cf27e49e0779a53c018b2342f5f1c5cc70b4"
         },
@@ -17414,7 +17414,7 @@
     "notmuch": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://git.notmuchmail.org/git/notmuch",
+            "url": "http://git.notmuchmail.org/git/notmuch",
             "sha256": "1b103da2084cb38dcf5ce07a62d69b6a15f81b59fae9130686934ec9820dc7b4",
             "rev": "8881a61fe7a1956534b89cd1f79984793ff694fe"
         },
@@ -17808,7 +17808,7 @@
     "mode-icons": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://ryuslash.org/mode-icons.git",
+            "url": "http://ryuslash.org/mode-icons.git",
             "sha256": "b7afff1d8fb0b3f044d266af479df51fbb6021ff433628a9dc669695c1ddae40",
             "rev": "cbf412d0c47dfdbeac7587a0c12c96f58f546467"
         },
@@ -23810,7 +23810,7 @@
     "jabber": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://git.code.sf.net/p/emacs-jabber/git",
+            "url": "http://git.code.sf.net/p/emacs-jabber/git",
             "sha256": "1a0f7c2154f863dbefc732a2057d0f7416cb4cd5764bdfa01cbf9e221a3abcb3",
             "rev": "d5bfa1c62e6474a997e73a836524fdd322c0af44"
         },
@@ -31157,7 +31157,7 @@
     "fuel": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://factorcode.org/git/factor.git",
+            "url": "http://factorcode.org/git/factor.git",
             "sha256": "8f9db8a5dae2ddd9a8a7118c79fe40be3d9c890d112f5858fb98a6ea90a19e56",
             "rev": "7e40b6037490f2194f0dcf02e18992e601e28b78"
         },
@@ -31503,7 +31503,7 @@
     "org-mac-iCal": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://orgmode.org/org-mode.git",
+            "url": "http://orgmode.org/org-mode.git",
             "sha256": "5f5c7580539162bd268e6e2703a47aea2a353984fe86158df72594d6105476d7",
             "rev": "955bc57ded513be2cf2248a7d7a858c11a1110b3"
         },
@@ -31868,7 +31868,7 @@
     "desktop-registry": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://ryuslash.org/desktop-registry.git",
+            "url": "http://ryuslash.org/desktop-registry.git",
             "sha256": "7c7727dd1d63be98e428700bfe340f2c4e7ff713fcc9b2b743a3366d786ae02d",
             "rev": "244c2e7f9f0a1050aa8a47ad0b38f4e4584682dd"
         },
@@ -32114,7 +32114,7 @@
     "stgit": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://repo.or.cz/stgit.git",
+            "url": "http://repo.or.cz/stgit.git",
             "sha256": "c5d424f34ca33d2c19e3888a9dc249d0398203e5199bf2b4bdd9e604390b500b",
             "rev": "e4e04764009f749665636c4d11e0cafd9c4971e1"
         },
@@ -32408,7 +32408,7 @@
     "org-mac-link": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://orgmode.org/org-mode.git",
+            "url": "http://orgmode.org/org-mode.git",
             "sha256": "5f5c7580539162bd268e6e2703a47aea2a353984fe86158df72594d6105476d7",
             "rev": "955bc57ded513be2cf2248a7d7a858c11a1110b3"
         },
@@ -34835,7 +34835,7 @@
     "eide": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://git.tuxfamily.org/gitroot/eide/emacs-ide.git",
+            "url": "http://git.tuxfamily.org/gitroot/eide/emacs-ide.git",
             "sha256": "3f41ade3332a3f1dc5cfb0b33077396feb7b683b2cf2c235b7a5f07f0b2e3271",
             "rev": "524494fd2b23217c6807b30b43bb95b5724f809e"
         },
@@ -35019,7 +35019,7 @@
     "speechd-el": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://git.freebsoft.org/git/speechd-el",
+            "url": "http://git.freebsoft.org/git/speechd-el",
             "sha256": "2c1bff3e5a182b8150c6ba6c3be7e70ab2b733cac0a758521c0b941dff215c32",
             "rev": "3d729817296b2ed8ad414a6aa044a8aa762259eb"
         },
@@ -37992,7 +37992,7 @@
     "jtags": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://git.code.sf.net/p/jtags/code",
+            "url": "http://git.code.sf.net/p/jtags/code",
             "sha256": "4fce3cbd26e010869736aae584753dca0b2201d31efaa8e52ee04b885edd859a",
             "rev": "89eca29499dd9516e6d70456dcd9f163777c786d"
         },
@@ -40332,7 +40332,7 @@
     "deft": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://jblevins.org/git/deft.git",
+            "url": "http://jblevins.org/git/deft.git",
             "sha256": "15c3ec6fcfae63201652394205fee951f3c1db8d3c6fc5f48c306b9b775c8e63",
             "rev": "2dd64ddc798a009e62289d65abfa621735461b7a"
         },
@@ -41537,7 +41537,7 @@
     "bbdb": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://git.savannah.nongnu.org/bbdb.git",
+            "url": "http://git.savannah.nongnu.org/bbdb.git",
             "sha256": "e20dfe8085782948c1411685d45bad0cb7ff088bc2d1d2c1654c276356382b26",
             "rev": "8fce6df3ab09250d545a2ed373ae64e68d12ff4c"
         },
@@ -42930,7 +42930,7 @@
     "emms": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://git.sv.gnu.org/emms.git",
+            "url": "http://git.sv.gnu.org/emms.git",
             "sha256": "6e653c3b44442e21ec6e4410d8b9c0e51b2f03ed1ae62c1bb1a2ffa6c8c144da",
             "rev": "489df29303fc89d4f80bffae91ad53f937ccd59a"
         },
@@ -46346,7 +46346,7 @@
     "markdown-mode": {
         "fetch": {
             "tag": "fetchgit",
-            "url": "git://jblevins.org/git/markdown-mode.git",
+            "url": "http://jblevins.org/git/markdown-mode.git",
             "sha256": "715de106b5be4b78b091ab76d70961e9232ee35f88673f55f5bfd01da6102e17",
             "rev": "5a83366cc8e33f4a50f6283fb2cd0c3519d8577a"
         },

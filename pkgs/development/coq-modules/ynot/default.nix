@@ -6,7 +6,7 @@ stdenv.mkDerivation rec {
   version = "ce1a9806";
 
   src = fetchgit {
-    url = git://github.com/Ptival/ynot.git;
+    url = http://github.com/Ptival/ynot.git;
     rev = "ce1a9806c26ffc6e7def41da50a9aac1433cb2f8";
     sha256 = "1pcmcl5zamiimkcg1xvynxnfbv439y02vg1mnz79hqq9mnjyfnpw";
   };

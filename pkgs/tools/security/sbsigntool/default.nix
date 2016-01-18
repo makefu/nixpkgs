@@ -6,7 +6,7 @@ stdenv.mkDerivation rec {
   version = "0.5";
 
   src = fetchgit {
-    url = "git://kernel.ubuntu.com/jk/sbsigntool";
+    url = "http://kernel.ubuntu.com/jk/sbsigntool";
     rev = "951ee95a301674c046f55330cd7460e1314deff2";
     sha256 = "09k8by0qq8j7ff812l1l9z9frsx5c4cmhj5in3g1sgyz3v55nfy7";
   };

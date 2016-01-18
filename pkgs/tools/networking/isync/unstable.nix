@@ -6,7 +6,7 @@ stdenv.mkDerivation rec {
   rev = "46e792";
 
   src = fetchgit {
-    url = "git://git.code.sf.net/p/isync/isync";
+    url = "http://git.code.sf.net/p/isync/isync";
     inherit rev;
     sha256 = "1flm9lkgf1pa6aa678xr0yj5fxwh8c9jpjzd4002f4jjmcf4w57s";
   };

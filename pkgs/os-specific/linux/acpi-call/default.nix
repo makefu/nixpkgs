@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "acpi-call-${kernel.version}";
 
   src = fetchgit {
-    url = "git://github.com/mkottman/acpi_call.git";
+    url = "http://github.com/mkottman/acpi_call.git";
     rev = "ac67445bc75ec4fcf46ceb195fb84d74ad350d51";
     sha256 = "0jl19irz9x9pxab2qp4z8c3jijv2m30zhmnzi6ygbrisqqlg4c75";
   };

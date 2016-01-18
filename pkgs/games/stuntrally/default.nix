@@ -6,13 +6,13 @@ stdenv.mkDerivation rec {
   version = "2.5";
 
   src = fetchgit {
-    url = git://github.com/stuntrally/stuntrally.git;
+    url = http://github.com/stuntrally/stuntrally.git;
     rev = "refs/tags/${version}";
     sha256 = "1lsh7z7sjfwpdybg6vbwqx1zxsgbfp2n60n7xl33v225p32qh1qf";
   };
 
   tracks = fetchgit {
-    url = git://github.com/stuntrally/tracks.git;
+    url = http://github.com/stuntrally/tracks.git;
     rev = "refs/tags/${version}";
     sha256 = "1614j6q1d2f69l58kkqndndvf6svcghhw8pzc2s1plf6k87h67mg";
   };

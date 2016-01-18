@@ -9,7 +9,7 @@ in stdenv.mkDerivation rec {
   name = "s6-rc-${version}";
 
   src = fetchgit {
-    url = "git://git.skarnet.org/s6-rc";
+    url = "http://git.skarnet.org/s6-rc";
     rev = "refs/tags/v${version}";
     sha256 = "02ppsda8pg7mph3r7lrh7dhi6ip99bgghsl3lf902cg9i4n50q6q";
   };

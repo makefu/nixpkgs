@@ -29,7 +29,7 @@ let
     inherit name version;
 
     src = fetchgit {
-        url = "git://github.com/zedapp/zed";
+        url = "http://github.com/zedapp/zed";
         rev = "refs/tags/v${version}";
         sha256 = "1zvlngv73h968jd2m42ylr9vfhf35n80wzy616cv2ic7gmr1fl9p";
       };

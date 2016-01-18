@@ -6,7 +6,7 @@ stdenv.mkDerivation rec {
   version = "0.8.1-git";
 
   src = fetchgit {
-    url = git://github.com/raboof/nethogs.git;
+    url = http://github.com/raboof/nethogs.git;
     rev = "f6f9e890ea731b8acdcb8906642afae4cd96baa8";
     sha256 = "0dj5sdyxdlssbnjbdf8k7x896m2zgyyg31g12dl5n6irqdrb5scf";
   };

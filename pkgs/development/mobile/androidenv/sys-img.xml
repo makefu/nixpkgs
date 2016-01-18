@@ -745,7 +745,7 @@ ANY PRE-RELEASE MATERIALS ARE NON-QUALIFIED AND, AS SUCH, ARE PROVIDED â€œAS ISâ
         <sdk:revision>4</sdk:revision>
         <!-- mipsia repo tag qa-dev-mips-jb-20130123,
              github.com/MIPS branch dev-mips-jb, tag mips-jb-4.1.2_r1m1
-             repo init -u git://github.com/MIPS/manifests.git
+             repo init -u http://github.com/MIPS/manifests.git
                  -b dev-mips-jb -m mips-jb-4.1.2_r1m1.xml           -->
         <sdk:description>Android 4.1.2</sdk:description>
         <sdk:api-level>16</sdk:api-level>

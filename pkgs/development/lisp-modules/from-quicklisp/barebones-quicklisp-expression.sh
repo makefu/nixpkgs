@@ -57,7 +57,7 @@ url="${ql_src##* }"
 
 [ "$ql_src_type" = git ] && {
   fetcher="pkgs.fetchgit"
-  ( [ "${url#git://github.com/}" != "$url" ] ||
+  ( [ "${url#http://github.com/}" != "$url" ] ||
     [ "${url#https://github.com/}" != "$url" ]
     ) && {
     url="${url/git:/https:}"
@@ -66,7 +66,7 @@ url="${ql_src##* }"
     hash=$("$(dirname "$0")/../../../build-support/fetchgit/nix-prefetch-git" "$url" "$rev" | grep . | tail -n 1)
     [ -z "$version" ] && version="git-$(date +%Y%m%d)";
   }
-  [ "${url#git://common-lisp.net/}" != "$url" ] && {
+  [ "${url#http://common-lisp.net/}" != "$url" ] && {
     http_repo_url="$url"
     http_repo_url="${http_repo_url/git:/http:}"
     http_repo_url="${http_repo_url/\/projects\// /r/projects/}"

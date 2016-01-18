@@ -16,7 +16,7 @@ stdenv.mkDerivation ({
   name = "libpthread-hurd-${if headersOnly then "headers-" else ""}${date}";
 
   src = fetchgit {
-    url = "git://git.sv.gnu.org/hurd/libpthread.git";
+    url = "http://git.sv.gnu.org/hurd/libpthread.git";
     sha256 = "e8300762914d927c0da4168341a5982a1057613e1af363ee68942087b2570b3d";
     inherit rev;
   };

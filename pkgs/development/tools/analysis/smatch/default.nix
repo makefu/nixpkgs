@@ -11,7 +11,7 @@ stdenv.mkDerivation {
   name = "smatch-20120924";
 
   src = fetchgit {
-    url = git://repo.or.cz/smatch.git;
+    url = http://repo.or.cz/smatch.git;
     rev = "23656e3e578b700cbf96d043f039e6341a3ba5b9";
     sha256 = "09a44967d4cff026c67062f778e251d0b432af132e9d59a47b7d3167f379adfa";
   };

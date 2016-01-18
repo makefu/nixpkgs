@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
 
   src = fetchgit {
     inherit rev;
-    url = "git://github.com/tbursztyka/connman-ui.git";
+    url = "http://github.com/tbursztyka/connman-ui.git";
     sha256 = "2072b337379b849cc55a19a3bb40834941e3f82b3924ef5d9b29e887fd19055e";
   };
 

@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
 
   src = fetchgit {
     rev = "refs/tags/v${version}";
-    url = "git://github.com/CenturyLinkLabs/panamax-api";
+    url = "http://github.com/CenturyLinkLabs/panamax-api";
     sha256 = "1g75y25asj33gcczpb9iwnk6f7afm1xjqyw803rr3y2h7dm6jivy";
   };
 

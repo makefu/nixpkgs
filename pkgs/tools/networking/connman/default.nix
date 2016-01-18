@@ -6,7 +6,7 @@ stdenv.mkDerivation rec {
   name = "connman-${version}";
   version = "1.30";
   src = fetchgit {
-    url = "git://git.kernel.org/pub/scm/network/connman/connman.git";
+    url = "http://git.kernel.org/pub/scm/network/connman/connman.git";
     rev = "refs/tags/${version}";
     sha256 = "715474351e22b52334d37c146fd5eb87d692be8501d8dac33a0e330437235295";
   };

@@ -626,10 +626,10 @@ evaluate correctly.</para>
     from bad to good:
     <itemizedlist>
       <listitem>
-        <para>Uses <literal>git://</literal> which won't be proxied.
+        <para>Uses <literal>http://</literal> which won't be proxied.
 <programlisting>
 src = fetchgit {
-  url = "git://github.com/NixOS/nix.git";
+  url = "http://github.com/NixOS/nix.git";
   rev = "1f795f9f44607cc5bec70d1300150bfefcef2aae";
   sha256 = "1cw5fszffl5pkpa6s6wjnkiv6lm5k618s32sp60kvmvpy7a2v9kg";
 }

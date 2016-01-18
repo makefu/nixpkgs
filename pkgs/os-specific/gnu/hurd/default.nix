@@ -22,7 +22,7 @@ stdenv.mkDerivation ({
   name = "hurd${suffix}-${date}";
 
   src = fetchgit {
-    url = "git://git.sv.gnu.org/hurd/hurd.git";
+    url = "http://git.sv.gnu.org/hurd/hurd.git";
     sha256 = "b7f57ec2c6dcaf35ec03fb7979eb5506180ce4c6e2edf60a587f12ac5b11f004";
     inherit rev;
   };

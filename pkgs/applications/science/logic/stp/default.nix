@@ -3,7 +3,7 @@ stdenv.mkDerivation rec {
   version = "2014.01.07";
   name = "stp-${version}";
   src = fetchgit {
-    url    = "git://github.com/stp/stp";
+    url    = "http://github.com/stp/stp";
     rev    = "3aa11620a823d617fc033d26aedae91853d18635";
     sha256 = "832520787f57f63cf47364d080f30ad10d6d6e00f166790c19b125be3d6dd45c";
   };

@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
   propagatedUserEnvPkgs = [ qtscriptgenerator ];
 
   meta = {
-    repositories.git = git://anongit.kde.org/amarok.git;
+    repositories.git = http://anongit.kde.org/amarok.git;
     description = "Popular music player for KDE";
     license = "GPL";
     homepage = http://amarok.kde.org;

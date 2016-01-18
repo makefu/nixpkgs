@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   name = "fprint_demo-2008-03-03";
 
   src = fetchgit {
-    url = "git://github.com/dsd/fprint_demo";
+    url = "http://github.com/dsd/fprint_demo";
     rev = "5d86c3f778bf97a29b73bdafbebd1970e560bfb0";
     sha256 = "fe5bbf8d062fedd6fa796e50c5bd95fef49580eb0a890f78d6f55bd51cc94234";
   };
