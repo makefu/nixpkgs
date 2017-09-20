@@ -32,6 +32,7 @@ stdenv.mkDerivation rec {
         --generator-output="out" \
         -Dflock_index=0 \
         -Dv8_enable_i18n_support=1 \
+        -Dv8_use_snapshot='false' \
         -Duse_system_icu=1 \
         -Dconsole=readline \
         -Dcomponent=shared_library \
