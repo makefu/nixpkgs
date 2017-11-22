@@ -2,12 +2,12 @@
 
 pythonPackages.buildPythonApplication rec {
   pname = "simp_le-client";
-  version = "0.2.0";
+  version = "0.6.2";
   name = "${pname}-${version}";
 
   src = pythonPackages.fetchPypi {
     inherit pname version;
-    sha256 = "1zg18jfry9mvkri3yd2f5mwfsl27ac9zmnll3bm93jb91jhd6ssh";
+    sha256 = "1kk9k2gcxc18b1nn563xv74rx2cf8jh4j3gvbsvbk1a4wps3za22";
   };
 
   checkPhase = ''
