@@ -3,6 +3,7 @@
 , idnSupport ? false, libidn ? null
 , ldapSupport ? false, openldap ? null
 , zlibSupport ? false, zlib ? null
+, nssSupport ? false, nss ? null
 , sslSupport ? false, openssl ? null
 , gnutlsSupport ? false, gnutls ? null
 , scpSupport ? false, libssh2 ? null
@@ -15,7 +16,8 @@ assert idnSupport -> libidn != null;
 assert ldapSupport -> openldap != null;
 assert zlibSupport -> zlib != null;
 assert sslSupport -> openssl != null;
-assert !(gnutlsSupport && sslSupport);
+assert nssSupport -> nss != null;
+assert !(gnutlsSupport && sslSupport && nssSupport);
 assert gnutlsSupport -> gnutls != null;
 assert scpSupport -> libssh2 != null;
 assert c-aresSupport -> c-ares != null;
@@ -46,6 +48,7 @@ stdenv.mkDerivation rec {
     optional gssSupport gss ++
     optional c-aresSupport c-ares ++
     optional sslSupport openssl ++
+    optional nssSupport nss ++
     optional gnutlsSupport gnutls ++
     optional scpSupport libssh2;
 
@@ -56,17 +59,18 @@ stdenv.mkDerivation rec {
   '';
 
   configureFlags = [
-      "--with-ca-fallback"
       "--disable-manual"
       ( if sslSupport then "--with-ssl=${openssl.dev}" else "--without-ssl" )
       ( if gnutlsSupport then "--with-gnutls=${gnutls.dev}" else "--without-gnutls" )
       ( if scpSupport then "--with-libssh2=${libssh2.dev}" else "--without-libssh2" )
       ( if ldapSupport then "--enable-ldap" else "--disable-ldap" )
       ( if ldapSupport then "--enable-ldaps" else "--disable-ldaps" )
+      ( if nssSupport then "--with-nss=${nss.dev}" else "--without-nss" )
       ( if idnSupport then "--with-libidn=${libidn.dev}" else "--without-libidn" )
     ]
     ++ stdenv.lib.optional c-aresSupport "--enable-ares=${c-ares}"
-    ++ stdenv.lib.optional gssSupport "--with-gssapi=${gss}";
+    ++ stdenv.lib.optional gssSupport "--with-gssapi=${gss}"
+    ++ stdenv.lib.optional (sslSupport || gnutlsSupport) "--with-ca-fallback";
 
   CXX = "c++";
   CXXCPP = "c++ -E";
