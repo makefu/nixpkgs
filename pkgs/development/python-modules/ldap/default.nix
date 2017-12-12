@@ -1,15 +1,17 @@
 { lib, writeText, buildPythonPackage, isPy3k, fetchPypi
-, openldap, cyrus_sasl, openssl, pytest }:
+, openldap, cyrus_sasl, openssl, pytest
+, pyasn1
+, pyasn1-modules
+}:
 
 buildPythonPackage rec {
   pname = "python-ldap";
-  version = "2.4.45";
+  version = "3.0.0b2";
   name = "${pname}-${version}";
-  disabled = isPy3k;
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "824fde180a53772e23edc031c4dd64ac1af4a3eade78f00d9d510937d562f64e";
+    sha256 = "1njyl2i8sw2b30ngszxx154qk2lcfs26h4rvpvlbq2irfc27cai8";
   };
 
   buildInputs = [ pytest ];
@@ -27,22 +29,11 @@ buildPythonPackage rec {
                 not Test02_ReconnectLDAPObject' Tests/*.py
   '';
 
-  patches = lib.singleton (writeText "avoid-syslog.diff" ''
-    diff a/Lib/slapdtest.py b/Lib/slapdtest.py
-    --- a/Lib/slapdtest.py
-    +++ b/Lib/slapdtest.py
-    @@ -60,7 +60,8 @@ def combined_logger(
-                 pass
-         # for writing to syslog
-         new_logger = logging.getLogger(log_name)
-    -    if sys_log_format:
-    +    # /dev/log does not exist in nix build environment.
-    +    if False:
-             my_syslog_formatter = logging.Formatter(
-                 fmt=' '.join((log_name, sys_log_format)))
-             my_syslog_handler = logging.handlers.SysLogHandler(
-  '');
-
   NIX_CFLAGS_COMPILE = "-I${cyrus_sasl.dev}/include/sasl";
-  propagatedBuildInputs = [openldap cyrus_sasl openssl];
+  propagatedBuildInputs = [openldap cyrus_sasl openssl pyasn1 pyasn1-modules];
+
+  meta = {
+    homepage = https://github.com/python-ldap/python-ldap;
+    description = "LDAP client API for Python";
+  };
 }
