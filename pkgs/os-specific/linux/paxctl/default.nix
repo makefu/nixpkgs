@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "0.8";
 
   src = fetchurl {
-    url = "http://pax.grsecurity.net/${name}.tar.gz";
+    url = "http://archive.org/download/nixos-stockholm-tarballs/560ivmbshjp13mwmwbj7ap5llxwi353j-paxctl_${version}.orig.tar.gz";
     sha256 = "107gmriq5icsk9yni5q949rnjapjkcs0823pw6zra6h1xml2f0mm";
   };
 
