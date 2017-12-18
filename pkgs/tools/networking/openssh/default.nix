@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
         + "f=sshconnect.c;h=324f5e0a396a4da9885d121bbbef87f6ccf2b149;"
         + "hp=87c3770c0fd5c7ff41227c45b4528985eaea54a6;hb=63d5fa28e16d96db6bac2dbe3fcecb65328f8966;"
         + "hpb=9cbb60f5e4932634db04c330c88abc49cc5567bd";
-      sha256 = "160c434igl2r8q4cavhdlwvnbqizx444sjrhg98f997pyhz524h9";
+      sha256 = "05w2fcw8jmxbcr2avld6q5r1qms1l5sgzv206fyl240iz1q7b9ws";
     })
   ];
 
