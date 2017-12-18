@@ -24,7 +24,9 @@ stdenv.mkDerivation rec {
     url = "http://ftp.nluug.nl/pub/OpenBSD/OpenSSH/portable/${name}.tar.gz";
     sha256 = "1fq3w86q05y5nn6z878wm312k0svaprw8k007188fd259dkg1ha8";
   };
-
+  preInstall = ''
+    sed -i 's/-m 4711/-m 755/' Makefile
+  '';
   prePatch = stdenv.lib.optionalString hpnSupport
     ''
       gunzip -c ${hpnSrc} | patch -p1
