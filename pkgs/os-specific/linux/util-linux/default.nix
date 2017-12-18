@@ -32,6 +32,9 @@ stdenv.mkDerivation rec {
     ++ stdenv.lib.optional (ncurses != null) ncurses
     ++ stdenv.lib.optional (perl != null) perl;
 
+  preInstall = ''
+    sed -i '/chmod 4755/d' Makefile
+  '';
   postInstall = ''
     rm $out/bin/su # su should be supplied by the su package (shadow)
   '';
