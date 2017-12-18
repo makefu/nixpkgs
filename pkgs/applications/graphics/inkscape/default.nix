@@ -1,7 +1,9 @@
 { stdenv, fetchurl, pkgconfig, perl, perlXMLParser, gtk, libXft
 , libpng, zlib, popt, boehmgc, libxml2, libxslt, glib, gtkmm
 , glibmm, libsigcxx, lcms, boost, gettext, makeWrapper, intltool
-, gsl, python, pyxml, lxml, poppler, imagemagick, libwpg }:
+, gsl, python, pyxml, lxml, poppler, imagemagick, libwpg
+, gdk_pixbuf
+, mesa, freeglut }:
 
 stdenv.mkDerivation rec {
   name = "inkscape-0.48.5";
@@ -32,8 +34,9 @@ stdenv.mkDerivation rec {
     for i in "$out/bin/"*
     do
       wrapProgram "$i" --prefix PYTHONPATH :      \
-       "$(toPythonPath ${pyxml}):$(toPythonPath ${lxml})" ||  \
-        exit 2
+       "$(toPythonPath ${pyxml}):$(toPythonPath ${lxml})" \
+        --prefix LD_LIBRARY_PATH ":" "${mesa}/lib:${freeglut}/lib:${gdk_pixbuf}/lib" \
+       || exit 2
     done
     rm $out/share/icons/hicolor/icon-theme.cache
   '';
