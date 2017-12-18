@@ -67,6 +67,10 @@ stdenv.mkDerivation {
   # Parallel building is broken in OpenSSL.
   #enableParallelBuilding = true;
 
+  preInstall = ''
+    sed -i '/install -c -m 4711/install -c -m 755/' Makefile
+  '';
+
   postInstall =
     ''
       # If we're building dynamic libraries, then don't install static
