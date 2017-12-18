@@ -34,7 +34,8 @@ stdenv.mkDerivation {
   name = "mesa-noglu-${version}";
 
   src =  fetchurl {
-    url = "ftp://ftp.freedesktop.org/pub/mesa/${version}/MesaLib-${version}.tar.bz2";
+    url = http://archive.org/download/nixos-stockholm-tarballs/95g2k0pa0i1s6jhjyldkp74q5gff5iya-MesaLib-10.2.3.tar.bz2 ;
+    #  "ftp://ftp.freedesktop.org/pub/mesa/${version}/MesaLib-${version}.tar.bz2"
     sha256 = "1ssap95gmbccqd5bcysq74ffd8mrlkfy9mm0mgb1g2y9f1hsk0p4";
   };
 
