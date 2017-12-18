@@ -2,7 +2,7 @@
 , libpng, zlib, popt, boehmgc, libxml2, libxslt, glib, gtkmm
 , glibmm, libsigcxx, lcms, boost, gettext, makeWrapper, intltool
 , gsl, python, pyxml, lxml, poppler, imagemagick, libwpg
-, gdk_pixbuf
+, gdk_pixbuf, fetchFromGitHub
 , mesa, freeglut }:
 
 stdenv.mkDerivation rec {
@@ -11,6 +11,12 @@ stdenv.mkDerivation rec {
   src = fetchurl {
     url = "mirror://sourceforge/inkscape/${name}.tar.bz2";
     sha256 = "0sfr7a1vr1066rrkkqbqvcqs3gawalj68ralnhd6k87jz62fcv1b";
+  };
+  inkcut = fetchFromGitHub {
+    owner = "shackspace";
+    repo = "inkcut_dmpl";
+    rev = "4edc092";
+    sha256 = "0z0vkj53vmq4sk7p75fqcd88k4i444dbhcz1fs4y5m1hbhiyji67";
   };
 
   patches = [ ./configure-python-libs.patch ];
@@ -34,10 +40,16 @@ stdenv.mkDerivation rec {
     for i in "$out/bin/"*
     do
       wrapProgram "$i" --prefix PYTHONPATH :      \
-       "$(toPythonPath ${pyxml}):$(toPythonPath ${lxml})" \
-        --prefix LD_LIBRARY_PATH ":" "${mesa}/lib:${freeglut}/lib:${gdk_pixbuf}/lib" \
+       "$(toPythonPath ${pyxml}):$(toPythonPath ${lxml}):$out/share/inkscape/extensions" \
+        --set FONTCONFIG_FILE "etc/fonts/fonts.conf" \
+        --set LD_LIBRARY_PATH "${mesa}/lib:${freeglut}/lib:${gdk_pixbuf}/lib" \
        || exit 2
     done
+
+    # install inkcut
+    echo ${inkcut}
+    cp -r ${inkcut}/* $out/share/inkscape/extensions
+
     rm $out/share/icons/hicolor/icon-theme.cache
   '';
 
