@@ -6275,6 +6275,8 @@ in {
     };
   };
 
+  josepy = callPackage ../development/python-modules/josepy {};
+
   jsbeautifier = callPackage ../development/python-modules/jsbeautifier {};
 
   jug = buildPythonPackage rec {
