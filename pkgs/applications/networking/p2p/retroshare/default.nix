@@ -34,6 +34,9 @@ stdenv.mkDerivation rec {
   # gui/settings/PluginsPage.h:25:28: fatal error: ui_PluginsPage.h: No such file or directory
   enableParallelBuilding = false;
 
+  postBuild = ''
+    ( cd libresapi/src/webui-src/make-src/ && ./build.sh)
+  '';
   postInstall = ''
     mkdir -p $out/bin
     mv $out/RetroShare06-nogui $out/bin/RetroShare-nogui
