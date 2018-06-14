@@ -278,8 +278,11 @@
     "sensor.coinmarketcap" = ps: with ps; [  ];
     "sensor.cpuspeed" = ps: with ps; [  ];
     "sensor.crimereports" = ps: with ps; [  ];
-    "sensor.cups" = ps: with ps; [  ];
-    "sensor.darksky" = ps: with ps; [  ];
+    "sensor.cups" = ps: with ps; [ pycups ];
+    "sensor.currencylayer" = ps: with ps; [  ];
+    "sensor.daikin" = ps: with ps; [  ];
+    "sensor.darksky" = ps: with ps; [ python-forecastio ];
+    "sensor.deconz" = ps: with ps; [  ];
     "sensor.deluge" = ps: with ps; [ deluge-client ];
     "sensor.deutsche_bahn" = ps: with ps; [  ];
     "sensor.dht" = ps: with ps; [  ];
