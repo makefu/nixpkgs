@@ -279,7 +279,7 @@
     "sensor.cpuspeed" = ps: with ps; [  ];
     "sensor.crimereports" = ps: with ps; [  ];
     "sensor.cups" = ps: with ps; [  ];
-    "sensor.darksky" = ps: with ps; [  ];
+    "sensor.darksky" = ps: with ps; [ python-forecastio ];
     "sensor.deluge" = ps: with ps; [ deluge-client ];
     "sensor.deutsche_bahn" = ps: with ps; [  ];
     "sensor.dht" = ps: with ps; [  ];

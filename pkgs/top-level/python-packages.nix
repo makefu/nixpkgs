@@ -4338,6 +4338,8 @@ in {
     };
   };
 
+  python-forecastio = callPackage ../development/python-modules/forecastio { };
+
   fpdf = callPackage ../development/python-modules/fpdf { };
 
   fritzconnection = callPackage ../development/python-modules/fritzconnection { };
