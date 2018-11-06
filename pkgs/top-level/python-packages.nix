@@ -2864,30 +2864,6 @@ in {
 
   hupper = callPackage ../development/python-modules/hupper {};
 
-  hovercraft = buildPythonPackage rec {
-    disabled = ! isPy3k;
-    name = "hovercraft-${version}";
-    version = "2.0";
-
-    src = pkgs.fetchurl {
-      url = "mirror://pypi/h/hovercraft/${name}.tar.gz";
-      sha256 = "0lqxr816lymgnywln8bbv9nrmkyahjjcjkm9kjyny9bflayz4f1g";
-    };
-
-    propagatedBuildInputs = with self; [ docutils lxml manuel pygments svg-path watchdog ];
-
-    # one test assumes we have docutils 0.12
-    # TODO: enable tests after upgrading docutils to 0.12
-    doCheck = false;
-
-    meta = {
-      description = "A tool to make impress.js presentations from reStructuredText";
-      homepage = https://github.com/regebro/hovercraft;
-      license = licenses.mit;
-      maintainers = with maintainers; [ goibhniu ];
-    };
-  };
-
   hsaudiotag = buildPythonPackage (rec {
     name = "hsaudiotag-1.1.1";
     disabled = isPy3k;

@@ -16888,6 +16888,8 @@ with pkgs;
     gtk = gtk3;
   };
 
+  hovercraft = python3Packages.callPackage ../applications/misc/hovercraft { };
+
   ht = callPackage ../applications/editors/ht { };
 
   hubstaff = callPackage ../applications/misc/hubstaff { };
