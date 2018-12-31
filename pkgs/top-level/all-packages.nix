@@ -181,6 +181,8 @@ with pkgs;
 
   fetchMavenArtifact = callPackage ../build-support/fetchmavenartifact { };
 
+  prefer-remote-fetch = import ../build-support/prefer-remote-fetch;
+
   global-platform-pro = callPackage ../development/tools/global-platform-pro/default.nix { };
 
   graph-easy = callPackage ../tools/graphics/graph-easy { };
