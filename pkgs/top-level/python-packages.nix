@@ -158,6 +158,12 @@ in {
 
   absl-py = callPackage ../development/python-modules/absl-py { };
 
+  adb-homeassistant = callPackage ../development/python-modules/adb-homeassistant { };
+
+  pure-python-adb-homeassistant = callPackage ../development/python-modules/pure-python-adb-homeassistant { };
+
+  firetv = callPackage ../development/python-modules/firetv { };
+
   aenum = callPackage ../development/python-modules/aenum { };
 
   affinity = callPackage ../development/python-modules/affinity { };
