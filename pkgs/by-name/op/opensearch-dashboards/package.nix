@@ -26,6 +26,11 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ makeWrapper ];
 
+  # The output contains ~114k files (mostly JS in node_modules).
+  # Stripping scans every file with `file` to find ELF binaries,
+  # which takes ~4 minutes and finds almost nothing worth stripping.
+  dontStrip = true;
+
   installPhase = ''
     mkdir -p $out/libexec/${pname} $out/bin
     mv * $out/libexec/${pname}/
