@@ -26,6 +26,9 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ makeWrapper ];
 
+  # avoid stripping all executables in node_modules to increase build performance
+  dontStrip = true;
+
   installPhase = ''
     mkdir -p $out/libexec/${pname} $out/bin
     mv * $out/libexec/${pname}/
