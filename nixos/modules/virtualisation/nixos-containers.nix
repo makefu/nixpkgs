@@ -235,11 +235,10 @@ let
     # Clean up existing machined registration and interfaces.
     machinectl terminate "$INSTANCE" 2> /dev/null || true
 
-    if [[ -n "''${HOST_ADDRESS-}" ]]  || [[ -n "''${LOCAL_ADDRESS-}" ]] ||
-       [[ -n "''${HOST_ADDRESS6-}" ]] || [[ -n "''${LOCAL_ADDRESS6-}" ]]; then
-      ip link del dev "ve-$INSTANCE" 2> /dev/null || true
-      ip link del dev "vb-$INSTANCE" 2> /dev/null || true
-    fi
+    # Not gated on HOST_ADDRESS/LOCAL_ADDRESS: a hostBridge container using
+    # DHCP sets neither, and a leaked veth makes every later start fail.
+    ip link del dev "ve-$INSTANCE" 2> /dev/null || true
+    ip link del dev "vb-$INSTANCE" 2> /dev/null || true
 
     ${concatStringsSep "\n" (
       mapAttrsToList (name: cfg: "ip link del dev ${name} 2> /dev/null || true ") cfg.extraVeths
